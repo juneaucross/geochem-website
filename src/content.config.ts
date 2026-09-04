@@ -151,6 +151,12 @@ const team = defineCollection({
           thesis: z.string().min(1).optional(),
           note: z.string().min(1).optional(),
           links: z.array(teamLink).optional(),
+          /** Optional portrait; omit when no asset (e.g. Andy Smith). Not used for status=note. */
+          photo: imageAsset
+            .extend({
+              alt: z.string().min(1).optional(),
+            })
+            .optional(),
         }),
       )
       .min(1),

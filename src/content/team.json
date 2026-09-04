@@ -20,44 +20,79 @@
         "PhD (2014–2019): University of Oregon, Eugene OR (in Ilya Bindeman’s group)",
         "B.S./Diploma (2008–2013): Russian State Geological Prospecting University (МГРИ-РГГРУ)"
       ],
-      "links": []
+      "links": [],
+      "photo": {
+        "src": "/assets/img/team-david-zakharov.jpg",
+        "width": 2500,
+        "height": 3750
+      }
     },
     {
       "name": "Afrid Abdaly Sheik",
       "role": "PhD student since Fall 2023",
       "status": "current",
       "education": ["BS + MS: Jadavpur University, India"],
-      "research": "Hydrothermal alteration of basalts as viewed by triple O-isotopes"
+      "research": "Hydrothermal alteration of basalts as viewed by triple O-isotopes",
+      "photo": {
+        "src": "/assets/img/team-afrid-abdaly-sheik.jpg",
+        "width": 1536,
+        "height": 1920
+      }
     },
     {
       "name": "Isabelle Boyer",
       "role": "MS student Fall 2025",
       "status": "current",
       "education": ["BS: University of Pittsburgh at Johnstown"],
-      "research": "Serpentinites"
+      "research": "Serpentinites",
+      "photo": {
+        "src": "/assets/img/team-isabelle-boyer.jpg",
+        "width": 2500,
+        "height": 3333
+      }
     },
     {
       "name": "Tom Howe",
       "role": "Senior Specialist and Co-director of the Hydrogeology Field Course",
       "status": "current",
       "url": "https://wmich.edu/geology/directory/howe",
-      "note": "Guru of technical support"
+      "note": "Guru of technical support",
+      "photo": {
+        "src": "/assets/img/team-tom-howe.jpg",
+        "width": 886,
+        "height": 1268
+      }
     },
     {
       "name": "Zack Stevens",
       "role": "MS alumnus",
       "status": "alumni",
-      "thesis": "Understanding the fluid source during alteration of former oceanic lithosphere in the polygenetic Ingalls Ophiolite Complex, Washington, USA"
+      "thesis": "Understanding the fluid source during alteration of former oceanic lithosphere in the polygenetic Ingalls Ophiolite Complex, Washington, USA",
+      "photo": {
+        "src": "/assets/img/team-zack-stevens.jpg",
+        "width": 560,
+        "height": 560
+      }
     },
     {
       "name": "Rhys Campbell",
       "role": "Undergraduate researcher (2024–2025)",
-      "status": "alumni"
+      "status": "alumni",
+      "photo": {
+        "src": "/assets/img/team-rhys-campbell.jpg",
+        "width": 2500,
+        "height": 1406
+      }
     },
     {
       "name": "Evan Angeski",
       "role": "Undergraduate researcher (summer 2023)",
-      "status": "alumni"
+      "status": "alumni",
+      "photo": {
+        "src": "/assets/img/team-evan-angeski.jpg",
+        "width": 1037,
+        "height": 1890
+      }
     }
   ]
 }

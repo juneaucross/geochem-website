@@ -550,6 +550,23 @@ a:active {
     border-color var(--motion-duration) var(--motion-ease);
 }
 
+/* Below-fold portraits: lazy + intrinsic size (no fetchpriority) */
+.person__photo {
+  display: block;
+  inline-size: 100%;
+  max-inline-size: 10rem;
+  block-size: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 0.5rem;
+  background: var(--color-band);
+}
+
+.person--pi .person__photo {
+  max-inline-size: 12rem;
+}
+
 .person:hover,
 .person:focus-within {
   background-color: color-mix(in srgb, var(--color-accent-soft) 55%, transparent);

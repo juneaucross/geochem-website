@@ -1,5 +1,6 @@
 ---
 import MediaFigure from './MediaFigure.astro';
+import { withBase } from '../lib/paths';
 
 interface SectionCopy {
   id: string;
@@ -13,6 +14,13 @@ interface TeamLink {
   href: string;
 }
 
+interface MemberPhoto {
+  src: string;
+  width: number;
+  height: number;
+  alt?: string;
+}
+
 interface Member {
   name: string;
   role: string;
@@ -24,6 +32,7 @@ interface Member {
   thesis?: string;
   note?: string;
   links?: TeamLink[];
+  photo?: MemberPhoto;
 }
 
 interface GroupPhoto {
@@ -45,6 +54,10 @@ const pi = members.find((m) => /principal investigator/i.test(m.role || ''));
 const current = members.filter((m) => m.status === 'current' && m !== pi);
 const alumni = members.filter((m) => m.status === 'alumni');
 const notes = members.filter((m) => m.status === 'note');
+
+function photoAlt(person: Member): string {
+  return person.photo?.alt ?? `${person.name}, ${person.role}`;
+}
 ---
 
 <section id="team" class="section section--band reveal is-revealed" aria-labelledby="team-title">
@@ -71,6 +84,17 @@ const notes = members.filter((m) => m.status === 'note');
         <div class="team-group">
           <h3 class="team-group__title">Principal investigator</h3>
           <article class="person person--pi">
+            {pi.photo ? (
+              <img
+                class="person__photo"
+                src={withBase(pi.photo.src)}
+                alt={photoAlt(pi)}
+                width={pi.photo.width}
+                height={pi.photo.height}
+                loading="lazy"
+                decoding="async"
+              />
+            ) : null}
             <h4 class="person__name">
               {pi.url ? <a href={pi.url}>{pi.name}</a> : pi.name}
             </h4>
@@ -110,6 +134,17 @@ const notes = members.filter((m) => m.status === 'note');
           <div class="team-grid">
             {current.map((person) => (
               <article class="person">
+                {person.photo ? (
+                  <img
+                    class="person__photo"
+                    src={withBase(person.photo.src)}
+                    alt={photoAlt(person)}
+                    width={person.photo.width}
+                    height={person.photo.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : null}
                 <h4 class="person__name">
                   {person.url ? <a href={person.url}>{person.name}</a> : person.name}
                 </h4>
@@ -155,6 +190,17 @@ const notes = members.filter((m) => m.status === 'note');
           <div class="team-grid team-grid--alumni">
             {alumni.map((person) => (
               <article class="person">
+                {person.photo ? (
+                  <img
+                    class="person__photo"
+                    src={withBase(person.photo.src)}
+                    alt={photoAlt(person)}
+                    width={person.photo.width}
+                    height={person.photo.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : null}
                 <h4 class="person__name">
                   {person.url ? <a href={person.url}>{person.name}</a> : person.name}
                 </h4>
