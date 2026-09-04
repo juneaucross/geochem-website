@@ -1,11 +1,7 @@
 ---
 import { render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import { Image } from 'astro:assets';
 import MediaFigure from './MediaFigure.astro';
-
-import labOverviewImg from '../assets/img/lab-overview-2024.jpg';
-import ramanImg from '../assets/img/raman-invia.jpg';
 
 interface SectionCopy {
   id: string;
@@ -29,9 +25,9 @@ const stableTitle = stable.data.title || 'Stable Isotope Lab';
 const ramanTitle = raman.data.title || 'Raman Microscope';
 ---
 
-<section 
-  id={meta.id || "labs"} 
-  class="section reveal is-revealed" 
+<section
+  id={meta.id || 'labs'}
+  class="section reveal is-revealed"
   aria-labelledby="labs-title"
   aria-describedby="labs-lede"
 >
@@ -42,53 +38,95 @@ const ramanTitle = raman.data.title || 'Raman Microscope';
   <div id="labs-body" class="labs-stack">
     <article class="lab" id="labs-stable-isotope">
       <h3>{stableTitle}</h3>
-      <div class="prose prose--lab">
+      <div class="lab__copy prose prose--lab">
         <StableContent />
       </div>
-      <MediaFigure
-        src={labOverviewImg}
-        alt="Lab overview photo showing stable isotope instrumentation"
-        caption="Lab overview photo (Jan 2024)"
-        width={1271}
-        height={953}
-        zoomable
-      />
+      <div class="lab__media">
+        <MediaFigure
+          src="/assets/img/lab-overview-2024.jpg"
+          alt="Lab overview photo showing stable isotope instrumentation"
+          caption="Lab overview photo (Jan 2024)"
+          width={1271}
+          height={953}
+          zoomable
+        />
+      </div>
     </article>
 
     <article class="lab" id="labs-raman">
       <h3>{ramanTitle}</h3>
-      <div class="prose prose--lab">
+      <div class="lab__copy prose prose--lab">
         <RamanContent />
       </div>
-      <MediaFigure
-        src={ramanImg}
-        alt="Renishaw InVia Raman microscope (532 nm laser setup)"
-        caption="Renishaw InVia Raman microscope (532 nm)"
-        width={1274}
-        height={958}
-        zoomable
-      />
+      <div class="lab__media">
+        <MediaFigure
+          src="/assets/img/raman-invia.jpg"
+          alt="Renishaw InVia Raman microscope (532 nm laser setup)"
+          caption="Renishaw InVia Raman microscope (532 nm)"
+          width={1274}
+          height={958}
+          zoomable
+        />
+      </div>
     </article>
   </div>
 </section>
 
 <style>
-  /* Stacked single-column layout */
   .labs-stack {
     display: flex;
     flex-direction: column;
     gap: var(--space-8, 3rem);
-    max-width: var(--content-width, 70ch);
-    margin-inline: auto;
+    margin-block-start: var(--space-4);
+    max-inline-size: var(--measure-wide);
+    container-type: inline-size;
+    container-name: labs;
   }
 
+  /* Default: stacked. Wide container → text | image (size-aware-styling) */
   .lab {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: var(--space-4, 1.5rem);
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    min-inline-size: 0;
   }
 
-  /* Scoped styling for rendered MD content */
+  .lab > h3 {
+    margin-block-end: 0;
+  }
+
+  .lab__copy {
+    max-inline-size: none;
+  }
+
+  .lab__media {
+    min-inline-size: 0;
+  }
+
+  .lab__media :global(.media-figure) {
+    margin-block: 0;
+    max-inline-size: none;
+    inline-size: 100%;
+  }
+
+  .lab__media :global(figcaption) {
+    max-inline-size: none;
+  }
+
+  @container labs (min-width: 40rem) {
+    .lab {
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      column-gap: var(--space-5, 2rem);
+      row-gap: var(--space-3, 1rem);
+    }
+
+    .lab > h3 {
+      grid-column: 1 / -1;
+    }
+  }
+
+  /* Collection MD starts with ## title — section already has h3 */
   .prose--lab :global(h2:first-child) {
     display: none;
   }
