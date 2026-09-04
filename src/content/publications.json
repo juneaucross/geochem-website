@@ -1,0 +1,122 @@
+{
+  "id": "publications",
+  "title": "Publications",
+  "note": "Lab members are underlined on the source site. Student authors marked with asterisks*.",
+  "items": [
+    {
+      "year": 2026,
+      "citation": "Sheik A. A.*, Zakharov D., Reed M. H., and Bell E. A. (2026) Spatial Variations in Hydrothermal Minerals of the Miocene Geitafell Central Volcano, Iceland. Journal of Volcanology and Geothermal Research.",
+      "doi": "https://doi.org/10.1016/j.jvolgeores.2026.108622",
+      "status": "published",
+      "studentAuthors": ["Sheik A. A."]
+    },
+    {
+      "year": 2026,
+      "citation": "Kitoga L.S., Guitreau M., Moyen J.F., Marin-Carbonne J., Boyet M., Bouvier A.S., Zakharov D. and Stevens G. (2026) Silicified seafloor contribution to TTG formation: insights from zircon O and Si isotopes. Geochemical Perspectives Letters, 39, pp.22-27.",
+      "doi": "https://doi.org/10.7185/geochemlet.2608"
+    },
+    {
+      "year": 2025,
+      "citation": "Zakharov D., Paul A.N., Colòn D.P., Ovtcharova M., Putlitz B., Bouvier A.-S., Sheik A. A.*, Zozulya D., Robyr M. (2025) Low-δ¹⁸O (−8 ‰, VSMOW) Paleoproterozoic and discordant zircon: Lessons learned from using a combination of traditional bulk and in situ approaches. Chemical Geology, 122972.",
+      "doi": "https://doi.org/10.1016/j.chemgeo.2025.122972",
+      "studentAuthors": ["Sheik A. A."]
+    },
+    {
+      "year": 2025,
+      "citation": "Zakharov D., Baumgartner L.P., Vennemann T., Bomou B., Di Rocco T., Pack A. (2025) Reaction-controlled triple O-isotope exchange trajectories during experimental alteration of olivine. Chemical Geology, 122504.",
+      "doi": "https://doi.org/10.1016/j.chemgeo.2024.122504"
+    },
+    {
+      "year": 2024,
+      "citation": "Kitoga L.S., Zakharov D., Marin-Carbonne J., Boyet M., Moyen J.F., Di Rocco T., Pack A., Olivier N. and Stevens G. (2024) Oxygen and silicon isotopic compositions of Archean silicified lava and cherts of the Onverwacht Group: Implication for seafloor hydrothermalism and the nature of recycled components in the source of granitoids. Chemical Geology, 122407.",
+      "doi": "https://doi.org/10.1016/j.chemgeo.2024.122407"
+    },
+    {
+      "year": 2024,
+      "citation": "Zhang L., Basak S., Zakharov D. and Szilas, K. (2024). Selective metasomatism of ultramafic cumulates within Archean supracrustal sequences. Geoscience Frontiers, 101851.",
+      "doi": "https://doi.org/10.1016/j.gsf.2024.101851"
+    },
+    {
+      "year": 2023,
+      "citation": "Zakharov D.O., Marin-Carbonne J., Pack A., Di Rocco T., Robyr M. and Vennemann T. (2023) In-situ and Triple Oxygen Isotope Characterization of Seafloor Drilled Cherts: Marine Diagenesis and Its Bearing on Seawater Reconstructions. Geochemistry, Geophysics, Geosystems.",
+      "doi": "https://doi.org/10.1029/2022GC010741"
+    },
+    {
+      "year": 2023,
+      "citation": "Zakharov D.O., Zozulya D.R. and Colòn D.P. (2023) Quantitative Record of the Neoarchean Water Cycle in a 2.67 Ga Magmatic-Hydrothermal System from the Fennoscandian Shield. Geology.",
+      "doi": "https://doi.org/10.1130/G50702.1"
+    },
+    {
+      "year": 2022,
+      "citation": "Zakharov D.O., Zozulya D.R. and Rubatto, D. (2022) Low δ¹⁸O Neoarchean precipitation recorded in a 2.67 Ga magmatic-hydrothermal system of the Keivy granitic complex, Russia. Earth and Planetary Science Letters 578, 117322.",
+      "doi": "https://doi.org/10.1016/j.epsl.2021.117322"
+    },
+    {
+      "year": 2021,
+      "citation": "Zakharov DO, Tanaka R, Butterfield DA and Nakamura E (2021) A New Insight into Seawater-Basalt Exchange Reactions Based on Combined δ¹⁸O—Δ′¹⁷O—⁸⁷Sr/⁸⁶Sr Values of Hydrothermal Fluids From the Axial Seamount Volcano, Pacific Ocean. Frontiers in Earth Sciences 9, 691699.",
+      "doi": "https://doi.org/10.3389/feart.2021.691699"
+    },
+    {
+      "year": 2021,
+      "citation": "Zakharov D.O., Lundstrom C.C., Laurent O., Reed M.H., and Bindeman I.N. (2021) Influence of high marine Ca/SO₄ ratio on alteration of submarine basalts at 2.41 Ga documented by triple O and Sr isotopes of epidote. Precambrian Research, 358, 106164.",
+      "doi": "https://doi.org/10.1016/j.precamres.2021.106164"
+    },
+    {
+      "year": 2021,
+      "citation": "Zakharov D.O., Marin-Carbonne J., Alleon J. and Bindeman I.N. (2021) Temporal triple oxygen isotope trend recorded by Precambrian cherts: A perspective from combined bulk and in situ secondary ion probe measurements. Reviews in Mineralogy & Geochemistry, vol. 86, 323-365.",
+      "doi": "http://dx.doi.org/10.2138/rmg.2021.86.10"
+    },
+    {
+      "year": 2020,
+      "citation": "Waterton P., Hyde W.R., Tusch J., Hollis J.A., Kirkland C.L., Kinney C., Yakymchuk C., Gardiner N.J., Zakharov D., Olierook H.K.H., Münker C., Lightfoot P.C. and Szilas K. Geodynamic implications of synchronous norite and TTG formation in the 3 Ga Maniitsoq Norite Belt, West Greenland. Frontiers in Earth Sciences 8, 562062.",
+      "doi": "https://doi.org/10.3389/feart.2020.562062"
+    },
+    {
+      "year": 2019,
+      "citation": "Zakharov D.O., Bindeman I.N., Tanaka R., Fridleifsson G.O., Reed M.H. and Hampton R.L. (2019) Triple oxygen isotope systematics as a tracer of fluids in the crust: A study from modern geothermal systems of Iceland. Chemical Geology 530, 119312.",
+      "doi": "https://doi.org/10.1016/j.chemgeo.2019.119312"
+    },
+    {
+      "year": 2019,
+      "citation": "Zakharov D.O., Bindeman I.N., Serebryakov N.S., Prave A.R., Azimov P.Ya. and Babarina I.I. (2019) Low δ¹⁸O rocks in the Belomorian belt, NW Russia and Scourie dikes, NW Scotland: A record of ancient meteoric water captured by the early Paleoproterozoic global magmatic event. Precambrian Research 333, 105431.",
+      "doi": "https://doi.org/10.1016/j.precamres.2019.105431"
+    },
+    {
+      "year": 2019,
+      "citation": "Zakharov D.O. and Bindeman I.N. (2019) Triple oxygen and hydrogen isotopic study of hydrothermally altered rocks from the 2.43–2.41 Ga Vetreny belt, Russia: An insight into the early Paleoproterozoic seawater. Geochimica Cosmochimica Acta 248, 185-209.",
+      "doi": "https://doi.org/10.1016/j.gca.2019.01.014"
+    },
+    {
+      "year": 2018,
+      "citation": "Bindeman I.N., Zakharov D.O., Palandri J., Greber N.D., Retallack G.J., Hofmann A., Dauphas N., Lackey J.S. and Bekker, A. (2018) Rapid growth of subaerial crust and the onset of a modern hydrologic cycle at the Archean-Proterozoic transition. Nature 557, 545-548.",
+      "doi": "https://doi.org/10.1038/s41586-018-0131-1"
+    },
+    {
+      "year": 2018,
+      "citation": "Avice, G., Marty, B., Burgess, R., Hofmann, A., Philippot, P., Zahnle, K., and Zakharov, D. (2018) Evolution of atmospheric xenon and other noble gases inferred from Archean to Paleoproterozoic rocks. Geochimica Cosmochimica Acta 232, 82-100.",
+      "doi": "https://doi.org/10.1016/j.gca.2018.04.018"
+    },
+    {
+      "year": 2017,
+      "citation": "Zakharov D.O., Bindeman I.N., Slabunov A.I., Ovtcharova M., Coble M.A., Serebryakov N. S. and Schaltegger U. (2017) Dating the Paleoproterozoic snowball Earth glaciations using contemporaneous subglacial hydrothermal systems. Geology 45, 5–8.",
+      "doi": "https://doi.org/10.1130/G38759.1"
+    },
+    {
+      "year": 2016,
+      "citation": "Bindeman I.N., Bekker, A. and Zakharov D.O. (2016) Oxygen isotope perspective on crustal evolution on early Earth: A record of Precambrian shales with emphasis on Paleoproterozoic glaciations and Great Oxygenation Event. Earth Planet. Sci. Lett. 437, 101-113.",
+      "doi": "https://doi.org/10.1016/j.epsl.2015.12.029"
+    },
+    {
+      "year": 2015,
+      "citation": "Khisamutdinova A.I., Zakharov D.O. and Soloviev A.V. (2015) The Western Kamchatka sedimentary basins: origin, age and composition of basal conglomerates. Russian Journal of Pacific Geology, 34, 78-92 / Источники сноса для базальных конгломератов Западно-Камчатского осадочного бассейна: возраст и вещественный состав галек. Тихоокеанская Геология, т. 34 № 3, с. 78-92.",
+      "doi": null,
+      "url": "http://itig.as.khb.ru/POG/2015/n_3/PDF_3_15/78-92.pdf"
+    },
+    {
+      "year": 2012,
+      "citation": "Onikienko L.D., Uganov, S.S., Zakharov D.O. and Ivanov, M.A. (2012) Geology, mineralogy and formation conditions “Oskolskiy” gold-bearing conglomerates from Kursk Magnetic Anomaly. Razvedka i Ohrana Nedr (Prospect and Protection of Mineral Resources; in Russian) / Геология, минералогия и условия образования «оскольских» золотоносных конгломератов КМА, Разведка и Охрана Недр 12, 3-7.",
+      "doi": null,
+      "url": "http://rion-journal.com/2012/12/05/12-2012/"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+---
+import SiteHeader from './vue/SiteHeader.vue';
+import Lightbox from './vue/Lightbox.vue';
+
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  brand: string;
+  nav: NavItem[];
+}
+
+const { brand, nav } = Astro.props;
+---
+
+{/*
+  client:load — above-the-fold chrome: solid-on-scroll, mobile menu, scroll-spy.
+  Must hydrate before first interaction / early scroll past the hero.
+*/}
+<SiteHeader client:load brand={brand} nav={nav} />
+
+{/*
+  client:load — lightbox triggers exist in Team / Labs / Gallery.
+  Document-delegated open must be ready before those figures are used.
+*/}
+<Lightbox client:load />

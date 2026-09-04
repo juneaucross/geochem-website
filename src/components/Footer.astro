@@ -1,0 +1,28 @@
+---
+interface Props {
+  department: string;
+  institution: string;
+  address: string;
+  phone: string;
+  email: string;
+  url: string;
+}
+
+const { department, institution, address, phone, email, url } = Astro.props;
+---
+
+<footer class="site-footer" id="site-footer">
+  <div class="site-footer__inner">
+    <p id="footer-dept" class="site-footer__dept">
+      {department} · {institution}
+    </p>
+    <p id="footer-address" class="site-footer__address">
+      {address} · {phone}
+    </p>
+    <p id="footer-contact" class="site-footer__contact">
+      <a href={`mailto:${email}`}>{email}</a>
+      {' · '}
+      <a href={url}>wmich.edu/geology</a>
+    </p>
+  </div>
+</footer>

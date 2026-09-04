@@ -1,0 +1,81 @@
+/**
+ * Design tokens — Near-surface Alteration & Geochemistry Group
+ * Direction: lab / basalt / mineral (cool petrographic neutrals + verdigris).
+ * Source: docs/design-audit.md
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ——— Color ——— */
+  --color-ink: #1c2428;
+  --color-ink-muted: #5c6a72;
+  --color-paper: #f3f5f4;
+  --color-surface: #ffffff;
+  --color-band: #e6ebec;
+  --color-line: #c5ced1;
+
+  --color-accent: #2a6b66;
+  --color-accent-hover: #1f524e;
+  --color-accent-soft: #d8eeeb;
+
+  --color-signal: #a84b32;
+  --color-signal-hover: #8a3c28;
+
+  --color-wmu-brown: #532e1f;
+  --color-focus: #0b57d0;
+  --color-overlay: rgba(28, 36, 40, 0.45);
+
+  /* ——— Typography ——— */
+  --font-display: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-ui: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, monospace;
+  --font-adjust: from-font;
+
+  /* Fluid type — max ≤ 2.5× min (a11y / modern-web-guidance fluid-scaling) */
+  --text-hero: clamp(2.25rem, 1.2rem + 4vw, 3.75rem);
+  --text-h2: clamp(1.5rem, 1.1rem + 1.6vw, 2.125rem);
+  --text-h3: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-small: clamp(0.8125rem, 0.8rem + 0.15vw, 0.875rem);
+  --text-eyebrow: 0.75rem;
+
+  --leading-body: 1.65;
+  --leading-display: 1.05;
+  --tracking-eyebrow: 0.08em;
+  --measure: 38rem;
+  --measure-wide: 68rem;
+
+  /* ——— Space ——— */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  /* Section rhythm ≈ Watkins 75px spirit → ~64–96px */
+  --space-6: clamp(4rem, 3rem + 3vw, 6rem);
+  --space-hero: min(100svh, 56rem);
+  --gutter: clamp(1rem, 3vw, 2rem);
+
+  --nav-height: 4rem;
+  --nav-height-compact: 3.25rem;
+
+  /* ——— Radii ——— */
+  --radius-none: 0;
+  --radius-media: 0;
+  --radius-control: 0.25rem;
+
+  /* ——— Motion ——— */
+  --motion-duration: 200ms;
+  --motion-duration-reveal: 480ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration: 0.01ms;
+    --motion-duration-reveal: 0.01ms;
+  }
+}

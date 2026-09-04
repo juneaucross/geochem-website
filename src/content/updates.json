@@ -1,0 +1,238 @@
+{
+  "id": "updates",
+  "title": "Lab Updates (diary entries of an assistant professor)",
+  "entries": [
+    {
+      "date": "2026-07",
+      "label": "2026 Jul",
+      "text": "The lab got funded from the NSF (David’s sole PI; $222,575) to study seafloor basement water-rock interactions (NSF OCE #2617725).",
+      "links": [
+        { "label": "NSF OCE #2617725", "href": "https://www.nsf.gov/awardsearch/show-award?AWD_ID=2617725" }
+      ]
+    },
+    {
+      "date": "2026-06",
+      "label": "2026 Jun",
+      "text": "A proposal to study silicic diagenesis was funded ($110,000; no overheads) by the Petroleum Research Fund (American Chemical Society). Contact me if you are motivated to join the group for a MS degree at Western!"
+    },
+    {
+      "date": "2026-04",
+      "label": "2026 Apr",
+      "text": "Afrid’s first paper got published in the Journal of Volcanology and Geothermal Research! Check some really neat isotope data (triple O, d18O SIMS in quartz, D/H).",
+      "links": [
+        { "label": "DOI", "href": "https://doi.org/10.1016/j.jvolgeores.2026.108622" }
+      ]
+    },
+    {
+      "date": "2026-03",
+      "label": "2026 Mar",
+      "text": "I am feeling fortunate to be a co-author on Dr. Steve Kitoga’s wonderful paper on silicified basalts and their contribution to TTG-generating regions, published in Geochemical Perspective Letters.",
+      "links": [
+        { "label": "DOI", "href": "https://doi.org/10.7185/geochemlet.2608" }
+      ]
+    },
+    {
+      "date": "2025-12",
+      "label": "2025 Dec",
+      "text": "The lab went to AGU 2025 in New Orleans, LA totaling 3 abstracts. It was nice and warm."
+    },
+    {
+      "date": "2025-09",
+      "label": "2025 Sept",
+      "text": "David went to Michigan State University to give the departmental seminar at the EES. Thanks to Dr. Tyrone Rooney for hosting.",
+      "links": [
+        { "label": "EES seminar", "href": "https://ees.natsci.msu.edu/news/EES%20Guest%20Speaker%20-%20Dr.%20David%20Zakharov.aspx" }
+      ]
+    },
+    {
+      "date": "2025-09",
+      "label": "2025 Sept",
+      "text": "Afrid and David went and presented their work at Midwest Geobiology hosted by Purdue University.",
+      "links": [
+        { "label": "Midwest Geobiology", "href": "https://midwestgeobiology.org/" }
+      ]
+    },
+    {
+      "date": "2025-08",
+      "label": "2025 Aug",
+      "text": "Student-led paper fully based on dataset collected in our lab was submitted! Also, we welcome new members of the laboratory — Isabelle Boyer (MS-track) joins the lab from University of Pittsburgh at Johnstown and Andy Smith from Ohio State University (MS-track; co-supervised with Dr. Steve Kaczmarek)."
+    },
+    {
+      "date": "2025-07",
+      "label": "2025 July",
+      "text": "Zack Stevens graduates with an MS degree! We wish him all the best out west!"
+    },
+    {
+      "date": "2025-07",
+      "label": "2025 July",
+      "text": "Our new paper on “terribly sick” zircon came out with one of the lowest δ¹⁸Ozc measured (−8 ‰) and its host quartz (−4 ‰) with our brand new triple O-isotope measurements from WMU. Took 5 labs to measure the datasets.",
+      "links": [
+        { "label": "DOI", "href": "https://doi.org/10.1016/j.chemgeo.2025.122972" }
+      ]
+    },
+    {
+      "date": "2025-02",
+      "label": "2025 Feb 24–27",
+      "text": "Afrid Sheik attended the SIMS Workshop 2025 at UCLA.",
+      "links": [
+        { "label": "SIMS Workshop 2025", "href": "https://uclasims.epss.ucla.edu/sims-workshop-2025/" }
+      ]
+    },
+    {
+      "date": "2024-12",
+      "label": "2024 Dec",
+      "text": "Our new paper on experimental olivine-water reaction and the corresponding δ′¹⁸O–Δ′¹⁷O shifts came out in Chemical Geology. Warning, there are 15 figures!",
+      "links": [
+        { "label": "DOI", "href": "https://doi.org/10.1016/j.chemgeo.2024.122504" }
+      ]
+    },
+    {
+      "date": "2024-11",
+      "label": "2024 Nov 22",
+      "text": "David gave a seminar at Kellogg Biological Station, MSU. Thanks to Klausmeier-Litchman Lab for hosting.",
+      "links": [
+        { "label": "KBS", "href": "https://www.kbs.msu.edu/" }
+      ]
+    },
+    {
+      "date": "2024-10",
+      "label": "2024 Oct",
+      "text": "New paper on silicification of Archean basalts came out in Chemical Geology (Kitoga et al., 2024)! Congrats to Dr. Steve Kitoga with a PhD defense at L'Université Clermont Auvergne in Clermont-Ferrand.",
+      "links": [
+        { "label": "DOI", "href": "https://doi.org/10.1016/j.chemgeo.2024.122407" }
+      ]
+    },
+    {
+      "date": "2024-10",
+      "label": "2024 Oct 7",
+      "text": "Our departmental series is hosting Dr. Mattia Pistone (University of Georgia), who will shed light on the drilling project of ICDP in the Ivrea-Verbano zone. Special thanks to the Continental Scientific Drilling program of the Geological Society of America: 2024–2025 Distinguished Lecture series as Mattia is the distinguished lecturer.",
+      "links": [
+        { "label": "Mattia Pistone", "href": "https://geology.uga.edu/directory/people/mattia-pistone" },
+        { "label": "DIVE into the Ivrea-Verbano zone", "href": "http://www.dive2ivrea.org/" }
+      ]
+    },
+    {
+      "date": "2024-09",
+      "label": "2024 Sept",
+      "text": "Rhys Campbell joined us as an undergraduate researcher continuing the work on petrography and stable isotopes of Michigan basin rocks."
+    },
+    {
+      "date": "2024-08",
+      "label": "2024 Aug 8–23",
+      "text": "We present our research at Goldschmidt, 2024 in Chicago! Everyone (Afrid, David and Zack) made their presentations (2 posters, 1 talk) in the session honoring the legacy of Karlis Muehlenbachs."
+    },
+    {
+      "date": "2024-04",
+      "label": "2024 Apr 24",
+      "text": "Join the IsoNet Isotopologue Network for Early Career Researchers (ECR) seminar on April 24th. I will be giving a short summary of our research program and lab capabilities.",
+      "links": [
+        { "label": "IsoNet seminar registration", "href": "https://isonetecr.wixsite.com/my-site/event-details-registration/seminar-david-zakharov-1" }
+      ]
+    },
+    {
+      "date": "2024-04",
+      "label": "2024 Apr 11",
+      "text": "David gives another departmental seminar at the University of Illinois at Urbana-Champaign. Thanks to Craig Lundstrom for hosting!"
+    },
+    {
+      "date": "2024-03",
+      "label": "2024 Mar 18",
+      "text": "We are fortunate to host a Distinguished Lecturer of the Mineralogical Society of America Dr. Juan Carlos de Obeso from University of Utah, who will present his talk “Sparkling water and peridotite: Serpentinization and carbonation in the mantle”.",
+      "links": [
+        { "label": "Juan Carlos de Obeso", "href": "https://www.jcdeobeso.com/" }
+      ]
+    },
+    {
+      "date": "2024-03",
+      "label": "2024 Mar",
+      "text": "The fluorination line is working in full swing! First set of consistent high-precision measurements of δ′¹⁸O–Δ′¹⁷O in olivine and quartz was conducted. Get in touch for collaborative projects/service measurements."
+    },
+    {
+      "date": "2024-02",
+      "label": "2024 Feb 26",
+      "text": "Our department hosts Dr. Hannah Blatchford (Eastern Michigan University), who will talk about history of deformation and metamorphic petrology in Western Gneiss Region, Norway.",
+      "links": [
+        { "label": "Hannah Blatchford", "href": "https://hannahblatchford.xyz/" }
+      ]
+    },
+    {
+      "date": "2024-02",
+      "label": "2024 Feb 2",
+      "text": "David gives a departmental seminar, Smith Lecture at the University of Michigan. Thanks to Ben Passey for hosting!",
+      "links": [
+        { "label": "Smith Lecture", "href": "https://lsa.umich.edu/earth/about-us/news-events/all-events.detail.html/108199-21819103.html" }
+      ]
+    },
+    {
+      "date": "2024-01",
+      "label": "2024 Jan",
+      "text": "Marks David’s first year at WMU and the mass spectrometer is at full functionality. Stay tuned for more updates."
+    },
+    {
+      "date": "2023-09",
+      "label": "2023 Sept 11–14",
+      "text": "Our Delta V Plus goes through an upgrade."
+    },
+    {
+      "date": "2023-09",
+      "label": "2023 Sep 8",
+      "text": "David traveled to the Department of Earth and Environmental Sciences, University of Iowa to present the departmental seminar. Thanks to Tom Forster for hosting.",
+      "links": [
+        { "label": "Iowa seminar", "href": "https://clas.uiowa.edu/ees/calendar/department-seminar-david-zakharov" }
+      ]
+    },
+    {
+      "date": "2023-08",
+      "label": "2023 August 15",
+      "text": "The lab welcomes PhD students Afrid Abdaly Sheik and Zack Stevens."
+    },
+    {
+      "date": "2023-08",
+      "label": "2023 August 4",
+      "text": "Renishaw Raman microscope is delivered to David’s lab."
+    },
+    {
+      "date": "2023-07",
+      "label": "2023 July 9–14",
+      "text": "David attended Goldschmidt 2023 in Lyon (FR) to present on “Investigating triple O-isotope exchange in submarine vent fluids and experimental H₂O-peridotite reaction” and to chair Session 8eO1 — “How do we reconstruct the environment from the geologic record? Identifying and measuring diagenesis in sedimentary archives”."
+    },
+    {
+      "date": "2023-06",
+      "label": "2023 June 25–29",
+      "text": "David attended the 2023 NAGT Early Career Workshop at Macalester College campus. Lots of great networking, community building activities, strategic planning for research and teaching. Highly recommended.",
+      "links": [
+        { "label": "NAGT Early Career Workshop 2023", "href": "https://serc.carleton.edu/NAGTWorkshops/earlycareer2023/index.html" }
+      ]
+    },
+    {
+      "date": "2023-05",
+      "label": "2023 May 4–5",
+      "text": "North-Central Section GSA meeting in Grand Rapids, MI. David presents “Where water meets magma: A high-temperature record of subaerially exposed continental crust through time”."
+    },
+    {
+      "date": "2023-05",
+      "label": "2023 May",
+      "text": "Welcome an undergraduate researcher Evan Angeski! Evan has started learning about the local geology using the drill cores available at the Michigan Geological Repository for Research and Education (MGRRE)."
+    },
+    {
+      "date": "2023-03",
+      "label": "2023 Mar",
+      "text": "Thermo EA Isolink has arrived on campus!"
+    },
+    {
+      "date": "2023-02",
+      "label": "2023 Feb 7",
+      "text": "A brand new CO₂ laser arrived along with many bits and pieces of lab equipment."
+    },
+    {
+      "date": "2023-01",
+      "label": "2023 Jan 9",
+      "text": "First week of classes at WMU. I am teaching GEOS 1300."
+    },
+    {
+      "date": "2022-12",
+      "label": "2022 Dec 12–16",
+      "text": "AGU Fall Meeting 2022 in Chicago! David Zakharov’s first presentation under the “WMU” name tag. The presentation entitled “High-precision and high spatial resolution isotope measurements of seafloor-drilled cherts: What can we learn about diagenesis of ancient cherts?”"
+    }
+  ]
+}

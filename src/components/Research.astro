@@ -1,0 +1,47 @@
+---
+import { doiLabel } from '../lib/doi';
+
+interface SectionCopy {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+}
+
+interface Theme {
+  id: string;
+  title: string;
+  dois: string[];
+}
+
+interface Props {
+  meta: SectionCopy;
+  themes: Theme[];
+}
+
+const { meta, themes } = Astro.props;
+---
+
+<section id="research" class="section reveal is-revealed" aria-labelledby="research-title">
+  <p class="eyebrow">{meta.eyebrow}</p>
+  <h2 id="research-title">{meta.title}</h2>
+  <p id="research-lede" class="lede">{meta.lede}</p>
+  <div id="research-body" class="research-grid">
+    {
+      themes.map((theme) => (
+        <article class="theme" id={`research-${theme.id}`}>
+          <h3>{theme.title}</h3>
+          <p class="theme__dois">
+            <span class="theme__dois-label">Papers</span>{' '}
+            {theme.dois.map((doi, i) => (
+              <>
+                {i > 0 ? '; ' : null}
+                <a href={doi}>{doiLabel(doi)}</a>
+              </>
+            ))}
+          </p>
+        </article>
+      ))
+    }
+  </div>
+</section>

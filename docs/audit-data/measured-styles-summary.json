@@ -1,0 +1,33 @@
+{
+  "viewport": "1440x900",
+  "date": "2026-08-07",
+  "jwatkins": {
+    "url": "https://jwatkins529.github.io/",
+    "font": "Open Sans",
+    "bodySize": "15px",
+    "bodyColor": "rgb(17,17,17)",
+    "accent": "#d2b356 / rgb(210,179,86)",
+    "pageBorder": "fixed #ccc frames",
+    "heroH1": "62px/800 lh60",
+    "heroSupport": "18px/300",
+    "sectionEyebrow": "14px/700 ls2px #ccc",
+    "sectionTitle": "34px/700",
+    "sectionInnerPadY": "75px",
+    "secondaryBand": "rgb(245,245,245)",
+    "jquery": "1.8.3",
+    "template": "Namari / ShapingRain",
+    "navPlugins": ["stickyNavbar", "waypoints", "featherlight", "wow", "enllax", "lightbox", "scrollUp"]
+  },
+  "davidzakharov": {
+    "url": "https://www.davidzakharov.com/",
+    "platform": "Squarespace",
+    "font": "Poppins",
+    "bodySize": "16px",
+    "headingH3": "35.2px/500",
+    "headingH4AsBody": "19.2px/500",
+    "header": "absolute ~125px transparent, not sticky",
+    "contentBox": "rgb(224,224,219)",
+    "heroLCP": "fetchpriority=high loading=eager thin-section image",
+    "nav": "8 items, often two-row wrap"
+  }
+}

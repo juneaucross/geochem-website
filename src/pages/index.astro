@@ -1,0 +1,129 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Research from '../components/Research.astro';
+import Team from '../components/Team.astro';
+import Labs from '../components/Labs.astro';
+import Gallery from '../components/Gallery.astro';
+import Services from '../components/Services.astro';
+import Publications from '../components/Publications.astro';
+import Join from '../components/Join.astro';
+import JsonLd from '../components/JsonLd.astro';
+import { sectionMeta } from '../lib/site';
+
+const siteEntry = await getEntry('site', 'site');
+if (!siteEntry) throw new Error('Missing content collection entry: site/site');
+
+const aboutEntry = await getEntry('about', 'about');
+if (!aboutEntry) throw new Error('Missing content collection entry: about/about');
+
+const joinEntry = await getEntry('join', 'join');
+if (!joinEntry) throw new Error('Missing content collection entry: join/join');
+
+const researchEntry = await getEntry('research', 'research');
+if (!researchEntry) throw new Error('Missing content collection entry: research/research');
+
+const teamEntry = await getEntry('team', 'team');
+if (!teamEntry) throw new Error('Missing content collection entry: team/team');
+
+const publicationsEntry = await getEntry('publications', 'publications');
+if (!publicationsEntry) {
+  throw new Error('Missing content collection entry: publications/publications');
+}
+
+const servicesEntry = await getEntry('services', 'services');
+if (!servicesEntry) throw new Error('Missing content collection entry: services/services');
+
+const updatesEntry = await getEntry('updates', 'updates');
+if (!updatesEntry) throw new Error('Missing content collection entry: updates/updates');
+
+const galleryEntry = await getEntry('gallery', 'gallery');
+if (!galleryEntry) throw new Error('Missing content collection entry: gallery/gallery');
+
+const labsStable = await getEntry('labs-stable-isotope', 'labs-stable-isotope');
+if (!labsStable) {
+  throw new Error('Missing content collection entry: labs-stable-isotope');
+}
+
+const labsRaman = await getEntry('labs-raman', 'labs-raman');
+if (!labsRaman) throw new Error('Missing content collection entry: labs-raman');
+
+const site = siteEntry.data;
+const sections = site.sections;
+
+const pageTitle = site.brand;
+const pageDescription = site.hero.support;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  heroImageSrc={site.hero.image.src}
+>
+  <JsonLd slot="head" site={site} publications={publicationsEntry.data.items} />
+
+  <Header brand={site.brand} nav={site.nav} />
+
+  <main id="main" tabindex="-1">
+    <Hero
+      brand={site.hero.brand}
+      headline={site.hero.headline}
+      support={site.hero.support}
+      image={site.hero.image}
+    />
+
+    <About
+      meta={sectionMeta(sections, 'about')}
+      body={aboutEntry.body ?? ''}
+      established={site.established}
+      updates={updatesEntry.data}
+    />
+
+    <Research meta={sectionMeta(sections, 'research')} themes={researchEntry.data.themes} />
+
+    <Team
+      meta={sectionMeta(sections, 'team')}
+      groupPhoto={teamEntry.data.groupPhoto}
+      members={teamEntry.data.members}
+    />
+
+    <Labs meta={sectionMeta(sections, 'labs')} stable={labsStable} raman={labsRaman} />
+
+    <Gallery
+      meta={sectionMeta(sections, 'gallery')}
+      note={galleryEntry.data.note}
+      items={galleryEntry.data.items}
+    />
+
+    <Services
+      meta={sectionMeta(sections, 'services')}
+      contactEmail={servicesEntry.data.contactEmail}
+      offerings={servicesEntry.data.offerings}
+    />
+
+    <Publications
+      meta={sectionMeta(sections, 'publications')}
+      note={publicationsEntry.data.note}
+      items={publicationsEntry.data.items}
+    />
+
+    <Join
+      meta={sectionMeta(sections, 'join')}
+      body={joinEntry.body ?? ''}
+      contactEmail={site.pi.email}
+    />
+  </main>
+
+  <Footer
+    department={site.affiliation.department}
+    institution={site.affiliation.institution}
+    address={site.affiliation.address}
+    phone={site.affiliation.phone}
+    email={site.pi.email}
+    url={site.affiliation.url}
+  />
+</BaseLayout>

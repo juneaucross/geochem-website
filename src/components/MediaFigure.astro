@@ -1,0 +1,62 @@
+---
+import { withBase } from '../lib/paths';
+
+interface Props {
+  src: string;
+  alt: string;
+  caption?: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  /** Emits data-lightbox-* attrs for the Lightbox Vue island. */
+  zoomable?: boolean;
+}
+
+const {
+  src,
+  alt,
+  caption,
+  width = 1200,
+  height = 800,
+  class: className = 'media-figure',
+  zoomable = false,
+} = Astro.props;
+
+const resolvedSrc = withBase(src);
+const figureClass = zoomable ? `${className} media-figure--zoomable` : className;
+---
+
+<figure class={figureClass}>
+  {
+    zoomable ? (
+      <button
+        type="button"
+        class="media-figure__zoom"
+        aria-haspopup="dialog"
+        aria-controls="lightbox-dialog"
+        data-lightbox-src={resolvedSrc}
+        data-lightbox-alt={alt}
+        data-lightbox-caption={caption || ''}
+      >
+        <img
+          src={resolvedSrc}
+          alt={alt}
+          width={width}
+          height={height}
+          loading="lazy"
+          decoding="async"
+        />
+      </button>
+    ) : (
+      <img
+        src={resolvedSrc}
+        alt={alt}
+        width={width}
+        height={height}
+        loading="lazy"
+        decoding="async"
+      />
+    )
+  }
+  {caption ? <figcaption>{caption}</figcaption> : null}
+</figure>

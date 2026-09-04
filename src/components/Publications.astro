@@ -1,0 +1,45 @@
+---
+import PublicationsList from './vue/PublicationsList.vue';
+
+interface SectionCopy {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+}
+
+interface PubItem {
+  year: number;
+  citation: string;
+  doi: string | null;
+  url?: string;
+  status?: string;
+  studentAuthors?: string[];
+}
+
+interface Props {
+  meta: SectionCopy;
+  note: string;
+  items: PubItem[];
+}
+
+const { meta, note, items } = Astro.props;
+---
+
+<section
+  id="publications"
+  class="section section--band reveal is-revealed"
+  aria-labelledby="publications-title"
+>
+  <p class="eyebrow">{meta.eyebrow}</p>
+  <h2 id="publications-title">{meta.title}</h2>
+  {meta.lede.trim() ? <p id="publications-lede" class="lede">{meta.lede}</p> : null}
+  <div id="publications-body">
+    {note ? <p class="status">{note}</p> : null}
+    {/*
+      client:visible — hydrate when #publications approaches the viewport.
+      SSR lists every publication; island collapses extras after hydrate (all viewports).
+    */}
+    <PublicationsList client:visible items={items} />
+  </div>
+</section>

@@ -1,0 +1,75 @@
+{
+  "id": "team",
+  "title": "Team",
+  "groupPhoto": {
+    "caption": "K Wings Game, Jan 2024",
+    "src": "/assets/img/team-kwings-2024.jpg",
+    "width": 1162,
+    "height": 654
+  },
+  "members": [
+    {
+      "name": "David Zakharov",
+      "role": "Principal Investigator",
+      "status": "current",
+      "url": "https://wmich.edu/geology/directory/zakharov",
+      "address": "Department of Geological and Environmental Sciences, Western Michigan University, 1903 W Michigan Ave, Kalamazoo MI 49008-5241",
+      "education": [
+        "Assistant Professor (2023–present)",
+        "Postdoc (2020–2022): Université de Lausanne, Switzerland (SwissSIMS; in Johanna Marin-Carbonne’s group)",
+        "PhD (2014–2019): University of Oregon, Eugene OR (in Ilya Bindeman’s group)",
+        "B.S./Diploma (2008–2013): Russian State Geological Prospecting University (МГРИ-РГГРУ)"
+      ],
+      "links": [
+        { "label": "SwissSIMS", "href": "https://swisssims.com" },
+        { "label": "Johanna Marin-Carbonne", "href": "https://applicationspub.unil.ch/interpub/noauth/php/Un/UnPers.php?LanCode=8&PerNum=1209072" },
+        { "label": "Ilya Bindeman", "href": "https://earthsciences.uoregon.edu/profile/bindeman/" },
+        { "label": "МГРИ-РГГРУ", "href": "https://www.mgri.ru/en/university/" }
+      ]
+    },
+    {
+      "name": "Afrid Abdaly Sheik",
+      "role": "PhD student since Fall 2023",
+      "status": "current",
+      "education": ["BS + MS: Jadavpur University, India"],
+      "research": "Hydrothermal alteration of basalts as viewed by triple O-isotopes"
+    },
+    {
+      "name": "Isabelle Boyer",
+      "role": "MS student Fall 2025",
+      "status": "current",
+      "education": ["BS: University of Pittsburgh at Johnstown"],
+      "research": "Serpentinites"
+    },
+    {
+      "name": "Andy Smith",
+      "role": "MS student (co-supervised with Dr. Steve Kaczmarek)",
+      "status": "current",
+      "education": ["Ohio State University"],
+      "note": "Mentioned in Lab Updates (Aug 2025); confirm roster details for final design."
+    },
+    {
+      "name": "Tom Howe",
+      "role": "Senior Specialist and Co-director of the Hydrogeology Field Course",
+      "status": "current",
+      "url": "https://wmich.edu/geology/directory/howe",
+      "note": "Guru of technical support"
+    },
+    {
+      "name": "Zack Stevens",
+      "role": "MS alumnus",
+      "status": "alumni",
+      "thesis": "Understanding the fluid source during alteration of former oceanic lithosphere in the polygenetic Ingalls Ophiolite Complex, Washington, USA"
+    },
+    {
+      "name": "Rhys Campbell",
+      "role": "Undergraduate researcher (2024–2025)",
+      "status": "alumni"
+    },
+    {
+      "name": "Evan Angeski",
+      "role": "Undergraduate researcher (summer 2023)",
+      "status": "alumni"
+    }
+  ]
+}

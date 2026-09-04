@@ -1,0 +1,45 @@
+---
+import { renderMarkdown, splitMdSections } from '../lib/markdown';
+
+interface SectionCopy {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+}
+
+interface Props {
+  meta: SectionCopy;
+  body: string;
+  contactEmail?: string;
+}
+
+const { meta, body, contactEmail = 'david.zakharov@wmich.edu' } = Astro.props;
+
+const sections = splitMdSections(body);
+const invite = sections.find((s) => /join us/i.test(s.title || '')) || sections[0];
+const kalamazoo = sections.find((s) => /kalamazoo/i.test(s.title || ''));
+
+const inviteHtml = await renderMarkdown(invite?.body || '');
+const kalamazooHtml = kalamazoo ? await renderMarkdown(kalamazoo.body) : '';
+---
+
+<section id="join" class="section reveal is-revealed" aria-labelledby="join-title">
+  <p class="eyebrow">{meta.eyebrow}</p>
+  <h2 id="join-title">{meta.title}</h2>
+  <p id="join-lede" class="lede">{meta.lede}</p>
+  <div id="join-body">
+    <div class="join-block prose" set:html={inviteHtml} />
+    <p class="join-contact cta-row">
+      <a class="btn btn--signal" href={`mailto:${contactEmail}`}>Email David</a>
+    </p>
+    {
+      kalamazoo ? (
+        <div class="join-block" id="join-kalamazoo">
+          <h3>{kalamazoo.title || 'Living and working in Kalamazoo'}</h3>
+          <div class="prose" set:html={kalamazooHtml} />
+        </div>
+      ) : null
+    }
+  </div>
+</section>

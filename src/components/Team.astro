@@ -1,0 +1,213 @@
+---
+import MediaFigure from './MediaFigure.astro';
+
+interface SectionCopy {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+}
+
+interface TeamLink {
+  label: string;
+  href: string;
+}
+
+interface Member {
+  name: string;
+  role: string;
+  status: 'current' | 'alumni' | 'note';
+  url?: string;
+  address?: string;
+  education?: string[];
+  research?: string;
+  thesis?: string;
+  note?: string;
+  links?: TeamLink[];
+}
+
+interface GroupPhoto {
+  src: string;
+  caption: string;
+  width: number;
+  height: number;
+}
+
+interface Props {
+  meta: SectionCopy;
+  groupPhoto?: GroupPhoto;
+  members: Member[];
+}
+
+const { meta, groupPhoto, members } = Astro.props;
+
+const pi = members.find((m) => /principal investigator/i.test(m.role || ''));
+const current = members.filter((m) => m.status === 'current' && m !== pi);
+const alumni = members.filter((m) => m.status === 'alumni');
+const notes = members.filter((m) => m.status === 'note');
+---
+
+<section id="team" class="section section--band reveal is-revealed" aria-labelledby="team-title">
+  <p class="eyebrow">{meta.eyebrow}</p>
+  <h2 id="team-title">{meta.title}</h2>
+  <p id="team-lede" class="lede">{meta.lede}</p>
+  <div id="team-body">
+    {
+      groupPhoto ? (
+        <MediaFigure
+          class="media-figure team-photo"
+          src={groupPhoto.src}
+          alt={groupPhoto.caption}
+          caption={groupPhoto.caption}
+          width={groupPhoto.width}
+          height={groupPhoto.height}
+          zoomable
+        />
+      ) : null
+    }
+
+    {
+      pi ? (
+        <div class="team-group">
+          <h3 class="team-group__title">Principal investigator</h3>
+          <article class="person person--pi">
+            <h4 class="person__name">
+              {pi.url ? <a href={pi.url}>{pi.name}</a> : pi.name}
+            </h4>
+            <p class="person__role">{pi.role}</p>
+            {pi.address ? <p class="person__meta">{pi.address}</p> : null}
+            {pi.research ? <p class="person__meta">Research: {pi.research}</p> : null}
+            {pi.thesis ? <p class="person__meta">MS thesis: “{pi.thesis}”</p> : null}
+            {pi.note && pi.status !== 'note' ? (
+              <p class="person__meta status">{pi.note}</p>
+            ) : null}
+            {pi.education?.length ? (
+              <ul class="person__education">
+                {pi.education.map((line) => (
+                  <li>{line}</li>
+                ))}
+              </ul>
+            ) : null}
+            {pi.links?.length ? (
+              <p class="link-row">
+                {pi.links.map((link, i) => (
+                  <>
+                    {i > 0 ? ' · ' : null}
+                    <a href={link.href}>{link.label}</a>
+                  </>
+                ))}
+              </p>
+            ) : null}
+          </article>
+        </div>
+      ) : null
+    }
+
+    {
+      current.length ? (
+        <div class="team-group">
+          <h3 class="team-group__title">Current members</h3>
+          <div class="team-grid">
+            {current.map((person) => (
+              <article class="person">
+                <h4 class="person__name">
+                  {person.url ? <a href={person.url}>{person.name}</a> : person.name}
+                </h4>
+                <p class="person__role">{person.role}</p>
+                {person.address ? <p class="person__meta">{person.address}</p> : null}
+                {person.research ? (
+                  <p class="person__meta">Research: {person.research}</p>
+                ) : null}
+                {person.thesis ? (
+                  <p class="person__meta">MS thesis: “{person.thesis}”</p>
+                ) : null}
+                {person.note && person.status !== 'note' ? (
+                  <p class="person__meta status">{person.note}</p>
+                ) : null}
+                {person.education?.length ? (
+                  <ul class="person__education">
+                    {person.education.map((line) => (
+                      <li>{line}</li>
+                    ))}
+                  </ul>
+                ) : null}
+                {person.links?.length ? (
+                  <p class="link-row">
+                    {person.links.map((link, i) => (
+                      <>
+                        {i > 0 ? ' · ' : null}
+                        <a href={link.href}>{link.label}</a>
+                      </>
+                    ))}
+                  </p>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        </div>
+      ) : null
+    }
+
+    {
+      alumni.length ? (
+        <div class="team-group">
+          <h3 class="team-group__title">Alumni</h3>
+          <div class="team-grid team-grid--alumni">
+            {alumni.map((person) => (
+              <article class="person">
+                <h4 class="person__name">
+                  {person.url ? <a href={person.url}>{person.name}</a> : person.name}
+                </h4>
+                <p class="person__role">{person.role}</p>
+                {person.address ? <p class="person__meta">{person.address}</p> : null}
+                {person.research ? (
+                  <p class="person__meta">Research: {person.research}</p>
+                ) : null}
+                {person.thesis ? (
+                  <p class="person__meta">MS thesis: “{person.thesis}”</p>
+                ) : null}
+                {person.note && person.status !== 'note' ? (
+                  <p class="person__meta status">{person.note}</p>
+                ) : null}
+                {person.education?.length ? (
+                  <ul class="person__education">
+                    {person.education.map((line) => (
+                      <li>{line}</li>
+                    ))}
+                  </ul>
+                ) : null}
+                {person.links?.length ? (
+                  <p class="link-row">
+                    {person.links.map((link, i) => (
+                      <>
+                        {i > 0 ? ' · ' : null}
+                        <a href={link.href}>{link.label}</a>
+                      </>
+                    ))}
+                  </p>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        </div>
+      ) : null
+    }
+
+    {
+      notes.length ? (
+        <div class="team-group">
+          <h3 class="team-group__title">Roster notes</h3>
+          <ul class="roster-notes">
+            {notes.map((person) => (
+              <li>
+                <strong>{person.name}</strong>
+                {` — ${person.role}`}
+                {person.note ? ` (${person.note})` : null}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null
+    }
+  </div>
+</section>

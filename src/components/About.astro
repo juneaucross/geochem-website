@@ -1,0 +1,83 @@
+---
+import { renderMarkdown, splitMdSections } from '../lib/markdown';
+import UpdatesList from './vue/UpdatesList.vue';
+
+interface SectionCopy {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+}
+
+interface UpdateLink {
+  label: string;
+  href: string;
+}
+
+interface UpdateEntry {
+  date: string;
+  label: string;
+  text: string;
+  links?: UpdateLink[];
+}
+
+interface Props {
+  meta: SectionCopy;
+  /** Raw markdown body from the about collection entry. */
+  body: string;
+  established: string;
+  updates: {
+    title: string;
+    entries: UpdateEntry[];
+  };
+}
+
+const { meta, body, established, updates } = Astro.props;
+
+const sections = splitMdSections(body);
+const mission =
+  sections.find((s) => /geochemistry at wmu/i.test(s.title || '')) || sections[0];
+const methods = sections.find((s) => /what do geochemists/i.test(s.title || ''));
+
+let missionBody = mission?.body || '';
+if (established) {
+  missionBody = missionBody
+    .split('\n')
+    .filter((line) => line.trim() !== established.trim())
+    .join('\n')
+    .trim();
+}
+
+const missionHtml = await renderMarkdown(missionBody);
+const methodsHtml = await renderMarkdown(methods?.body || '');
+---
+
+<section id="about" class="section section--band reveal is-revealed" aria-labelledby="about-title">
+  <p class="eyebrow">{meta.eyebrow}</p>
+  <h2 id="about-title">{meta.title}</h2>
+  <p id="about-lede" class="lede">{meta.lede}</p>
+
+  <div class="about-layout">
+    <div class="about-main">
+      <div id="about-body" class="prose" set:html={missionHtml} />
+      <p id="about-established" class="meta-line">{established}</p>
+
+      <div class="about-methods" aria-labelledby="methods-title">
+        <h3 id="methods-title">What do geochemists do?</h3>
+        <div id="methods-body" class="prose" set:html={methodsHtml} />
+      </div>
+    </div>
+
+    <aside id="updates" class="about-updates" aria-labelledby="updates-title">
+      <h3 id="updates-title">Lab updates</h3>
+      <p class="lede lede--compact">
+        Diary entries from the lab — grants, papers, seminars, and people.
+      </p>
+      {/*
+        client:visible — hydrate when #updates approaches the viewport.
+        SSR lists every entry; island collapses extras after hydrate on narrow viewports (PE).
+      */}
+      <UpdatesList client:visible entries={updates.entries} />
+    </aside>
+  </div>
+</section>

@@ -1,0 +1,92 @@
+---
+interface Pi {
+  name: string;
+  email: string;
+  title: string;
+  profileUrl: string;
+}
+
+interface Affiliation {
+  institution: string;
+  phone: string;
+  url: string;
+}
+
+interface Site {
+  brand: string;
+  url: string;
+  pi: Pi;
+  affiliation: Affiliation;
+}
+
+interface PubItem {
+  year: number;
+  citation: string;
+  doi: string | null;
+}
+
+interface Props {
+  site: Site;
+  publications: PubItem[];
+}
+
+const { site, publications } = Astro.props;
+
+const scholarly = publications
+  .filter((p) => p.doi)
+  .slice(0, 12)
+  .map((p) => ({
+    '@type': 'ScholarlyArticle',
+    headline: p.citation,
+    datePublished: String(p.year),
+    url: p.doi,
+    identifier: p.doi,
+  }));
+
+const graph = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ResearchOrganization',
+      '@id': `${site.url}#lab`,
+      name: site.brand,
+      url: site.url,
+      parentOrganization: {
+        '@type': 'CollegeOrUniversity',
+        name: site.affiliation.institution,
+        url: site.affiliation.url,
+      },
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '1903 W Michigan Ave',
+        addressLocality: 'Kalamazoo',
+        addressRegion: 'MI',
+        postalCode: '49008-5241',
+        addressCountry: 'US',
+      },
+      email: site.pi.email,
+      telephone: site.affiliation.phone,
+    },
+    {
+      '@type': 'Person',
+      '@id': `${site.url}#pi`,
+      name: site.pi.name,
+      jobTitle: site.pi.title,
+      email: site.pi.email,
+      url: site.pi.profileUrl,
+      affiliation: { '@id': `${site.url}#lab` },
+    },
+    {
+      '@type': 'ItemList',
+      name: 'Selected publications',
+      itemListElement: scholarly.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item,
+      })),
+    },
+  ],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(graph)} />

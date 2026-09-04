@@ -1,0 +1,38 @@
+{
+  "id": "services",
+  "title": "Service work",
+  "contactEmail": "david.zakharov@wmich.edu",
+  "intro": "For collaborative work, rates and availability contact david.zakharov@wmich.edu",
+  "offerings": [
+    {
+      "category": "Stable isotopes",
+      "items": [
+        {
+          "name": "O-isotope measurements by laser fluorination",
+          "price": "$50/sample",
+          "deliverable": "Spreadsheet with sample#, δ¹⁷O, δ¹⁸O and uncertainties"
+        },
+        {
+          "name": "H-isotope measurements and H₂O wt.% determination by thermal conversion elemental analysis EA Isolink-OH",
+          "price": "$20/sample",
+          "deliverable": "Spreadsheet with sample#, water content (wt.%), δD, δ¹⁷O, δ¹⁸O and their uncertainties"
+        }
+      ]
+    },
+    {
+      "category": "Raman",
+      "items": [
+        {
+          "name": "Identification of minerals — preferably in thin sections, powders or small separated grains",
+          "price": "$30/hr",
+          "deliverable": "PowerPoint document with identified minerals, their spectra collected in the lab, and optical microscope images with marked spots where spectra were collected"
+        },
+        {
+          "name": "Microscopic mapping by Raman",
+          "price": "included in hourly rate / by arrangement",
+          "deliverable": "Mapping available up to 100 by 100 micron areas"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+---
+interface SectionCopy {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+}
+
+interface RateItem {
+  name: string;
+  price: string;
+  deliverable: string;
+}
+
+interface Offering {
+  category: string;
+  items: RateItem[];
+}
+
+interface Props {
+  meta: SectionCopy;
+  contactEmail: string;
+  offerings: Offering[];
+}
+
+const { meta, contactEmail, offerings } = Astro.props;
+const email = contactEmail || 'david.zakharov@wmich.edu';
+---
+
+<section id="services" class="section reveal is-revealed" aria-labelledby="services-title">
+  <p class="eyebrow">{meta.eyebrow}</p>
+  <h2 id="services-title">{meta.title}</h2>
+  <p id="services-lede" class="lede">{meta.lede}</p>
+  <div id="services-body">
+    <p class="services-intro">
+      For collaborative work, rates and availability contact{' '}
+      <a href={`mailto:${email}`}>{email}</a>.
+    </p>
+    <div class="rates">
+      {
+        offerings.map((block) => (
+          <div class="rates__block">
+            <h3>{block.category}</h3>
+            <table class="rates-table">
+              <thead>
+                <tr>
+                  <th scope="col">Measurement</th>
+                  <th scope="col">Rate</th>
+                  <th scope="col">Deliverable</th>
+                </tr>
+              </thead>
+              <tbody>
+                {block.items.map((item) => (
+                  <tr class="rates-row">
+                    <th scope="row">{item.name}</th>
+                    <td class="text-data">{item.price}</td>
+                    <td>{item.deliverable}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,390 @@
+[
+  {
+    "id": "hero-thin-section",
+    "sourcePage": "https://www.davidzakharov.com/",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/8e7f7582-cb37-4299-bc11-6c2935414c12/TS_WT5-6_transmitted_light_x04_PPL-03.jpg?format=2500w",
+    "alt": "Petrographic thin-section in plane-polarized light (TS_WT5-6); altered basalt fabric",
+    "localPath": "public/assets/img/hero-thin-section.jpg",
+    "publicSrc": "/assets/img/hero-thin-section.jpg",
+    "width": 2080,
+    "height": 1544,
+    "usedIn": [
+      "hero"
+    ],
+    "role": "hero",
+    "downloaded": true,
+    "bytes": 975451
+  },
+  {
+    "id": "isabelle-h-isotopes",
+    "sourcePage": "https://www.davidzakharov.com/",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/336d8d4e-dde7-49ae-a096-5a83e34975b2/IMG_1488.jpg?format=2500w",
+    "alt": "Isabelle Boyer preparing samples for H-isotopes by EA Isolink OH",
+    "localPath": "public/assets/img/isabelle-h-isotopes.jpg",
+    "publicSrc": "/assets/img/isabelle-h-isotopes.jpg",
+    "width": 1187,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "about"
+    ],
+    "role": "about",
+    "downloaded": true,
+    "bytes": 259468
+  },
+  {
+    "id": "afrid-fluorination",
+    "sourcePage": "https://www.davidzakharov.com/",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/ae02c35a-d495-4e47-9acf-f8fb0ed932e1/IMG_3498_edited.jpg?format=2500w",
+    "alt": "Stable isotope lab at WMU 2024. PhD student Afrid Sheik is fluorinating silicates",
+    "localPath": "public/assets/img/afrid-fluorination.jpg",
+    "publicSrc": "/assets/img/afrid-fluorination.jpg",
+    "width": 1145,
+    "height": 700,
+    "usedIn": [
+      "gallery",
+      "about"
+    ],
+    "role": "about",
+    "downloaded": true,
+    "bytes": 249625
+  },
+  {
+    "id": "team-kwings-2024",
+    "sourcePage": "https://www.davidzakharov.com/team",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/2512f4dd-f654-4e71-91c6-cd1eb3d84e37/IMG_2900.jpg?format=2500w",
+    "alt": "K Wings Game, Jan 2024",
+    "localPath": "public/assets/img/team-kwings-2024.jpg",
+    "publicSrc": "/assets/img/team-kwings-2024.jpg",
+    "width": 1162,
+    "height": 654,
+    "usedIn": [
+      "team",
+      "gallery"
+    ],
+    "role": "team",
+    "downloaded": true,
+    "bytes": 173484
+  },
+  {
+    "id": "research-kola-zircons",
+    "sourcePage": "https://www.davidzakharov.com/research",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/2ccf8cd9-1fcc-4ae1-a75d-1d170d4c59fc/scrolling+images2.jpg?format=2500w",
+    "alt": "Low-δ¹⁸O zircons from the Kola Craton. SIMS analytical points with δ¹⁸O, ¹⁶OH/¹⁶O ratios, and ²⁰⁷–²⁰⁶Pb ages.",
+    "localPath": "public/assets/img/research-kola-zircons.jpg",
+    "publicSrc": "/assets/img/research-kola-zircons.jpg",
+    "width": 2500,
+    "height": 3474,
+    "usedIn": [
+      "research",
+      "gallery"
+    ],
+    "role": "research",
+    "downloaded": true,
+    "bytes": 1121572
+  },
+  {
+    "id": "research-axial-jason",
+    "sourcePage": "https://www.davidzakharov.com/research",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/1a589467-b4f0-4f2b-a28a-193d482ffe39/Fig2-J1293-Inferno-scaled.jpg?format=2500w",
+    "alt": "ROV Jason sampled hydrothermal vent fluids at the vents of the Axial Seamount. Credit: W. Chadwick, OSU, NSF, WHOI. 2020.",
+    "localPath": "public/assets/img/research-axial-jason.jpg",
+    "publicSrc": "/assets/img/research-axial-jason.jpg",
+    "width": 2500,
+    "height": 1404,
+    "usedIn": [
+      "research",
+      "gallery"
+    ],
+    "role": "research",
+    "downloaded": true,
+    "bytes": 853104
+  },
+  {
+    "id": "research-chert-thin-section",
+    "sourcePage": "https://www.davidzakharov.com/research",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/1c217aa6-ecf0-4927-84a4-08347216f64a/fig09.jpg?format=2500w",
+    "alt": "Thin section of a chert drilled from modern seafloor; SIMS and electron microprobe maps of recrystallized foraminifera shell.",
+    "localPath": "public/assets/img/research-chert-thin-section.jpg",
+    "publicSrc": "/assets/img/research-chert-thin-section.jpg",
+    "width": 2500,
+    "height": 2440,
+    "usedIn": [
+      "research",
+      "gallery"
+    ],
+    "role": "research",
+    "downloaded": true,
+    "bytes": 1569737
+  },
+  {
+    "id": "research-vetreny-pillows",
+    "sourcePage": "https://www.davidzakharov.com/research",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/cc2e25e3-f50e-4672-993d-c2cd999c3b89/VB_section_precam1.jpg?format=2500w",
+    "alt": "Well-preserved pillow basalts from the 2.43–2.41 Ga Vetreny Belt (Karelia Craton, Russia).",
+    "localPath": "public/assets/img/research-vetreny-pillows.jpg",
+    "publicSrc": "/assets/img/research-vetreny-pillows.jpg",
+    "width": 2500,
+    "height": 1957,
+    "usedIn": [
+      "research",
+      "gallery"
+    ],
+    "role": "research",
+    "downloaded": true,
+    "bytes": 1539754
+  },
+  {
+    "id": "lab-fluorination-quartz-process",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/be01efb8-a71f-470b-9214-835562722883/progress_ablation_QTZ.jpg?format=2500w",
+    "alt": "Laser fluorination of quartz grains in Ni holder (process sequence)",
+    "localPath": "public/assets/img/lab-fluorination-quartz-process.jpg",
+    "publicSrc": "/assets/img/lab-fluorination-quartz-process.jpg",
+    "width": 2500,
+    "height": 1424,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 420217
+  },
+  {
+    "id": "lab-fluorination-uwg2-garnet",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/2e3e3f07-7d18-4bc8-b820-9763c2155a3b/progress_ablation_UWG2.jpg?format=2500w",
+    "alt": "Fluorination progress for UWG-2 garnet",
+    "localPath": "public/assets/img/lab-fluorination-uwg2-garnet.jpg",
+    "publicSrc": "/assets/img/lab-fluorination-uwg2-garnet.jpg",
+    "width": 2500,
+    "height": 1304,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 381825
+  },
+  {
+    "id": "lab-overview-2024",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/5edbd420-e73d-434d-991a-32c2a9610c49/IMG_2855.jpg?format=2500w",
+    "alt": "Lab overview photo (Jan 2024)",
+    "localPath": "public/assets/img/lab-overview-2024.jpg",
+    "publicSrc": "/assets/img/lab-overview-2024.jpg",
+    "width": 1271,
+    "height": 953,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 317193
+  },
+  {
+    "id": "lab-delta-v-analyzer",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/e4e42d8f-3a11-4c96-92c5-1b59805a3a8f/IMG_2759.jpg?format=2500w",
+    "alt": "Analyzer of our Delta V Plus; CONFLO IV above the MS",
+    "localPath": "public/assets/img/lab-delta-v-analyzer.jpg",
+    "publicSrc": "/assets/img/lab-delta-v-analyzer.jpg",
+    "width": 668,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 165039
+  },
+  {
+    "id": "lab-brf5-transfer",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/52d0294b-a86c-4138-a2e1-03716cf9c24d/IMG_2407.jpg?format=2500w",
+    "alt": "Transfer and distillation of fluorinating agent inside a fume hood",
+    "localPath": "public/assets/img/lab-brf5-transfer.jpg",
+    "publicSrc": "/assets/img/lab-brf5-transfer.jpg",
+    "width": 1187,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 270701
+  },
+  {
+    "id": "lab-fluorination-line",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/e2b35e3c-9437-43ec-9417-45e930edcaf0/IMG_8156.jpg?format=2500w",
+    "alt": "Fluorination line at work with vent snorkel",
+    "localPath": "public/assets/img/lab-fluorination-line.jpg",
+    "publicSrc": "/assets/img/lab-fluorination-line.jpg",
+    "width": 1187,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 309886
+  },
+  {
+    "id": "lab-haenicke-hall",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/1d4b276a-1a5e-4419-88c1-9c96b6913011/IMG_2260.jpg?format=2500w",
+    "alt": "Beautiful Haenicke Hall, where we are hosted",
+    "localPath": "public/assets/img/lab-haenicke-hall.jpg",
+    "publicSrc": "/assets/img/lab-haenicke-hall.jpg",
+    "width": 668,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 241516
+  },
+  {
+    "id": "lab-chlorine-byproduct",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/f74fe9db-61d6-48c9-99e7-1ad96dd9975b/IMG_2405.jpg?format=2500w",
+    "alt": "Chlorine in solid form — fluorination byproduct",
+    "localPath": "public/assets/img/lab-chlorine-byproduct.jpg",
+    "publicSrc": "/assets/img/lab-chlorine-byproduct.jpg",
+    "width": 668,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 69368
+  },
+  {
+    "id": "lab-sample-chamber",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/8e110854-6189-4456-b7f8-d319ca16c872/IMG_8161.jpg?format=2500w",
+    "alt": "Sample chamber with Ni-sample holder under vacuum behind BaF₂ window",
+    "localPath": "public/assets/img/lab-sample-chamber.jpg",
+    "publicSrc": "/assets/img/lab-sample-chamber.jpg",
+    "width": 668,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 73141
+  },
+  {
+    "id": "lab-machine-shop",
+    "sourcePage": "https://www.davidzakharov.com/stable-isotope-lab",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/afe0c91e-08b2-419e-96c4-2e1841ca532a/IMG_3635.jpg?format=2500w",
+    "alt": "Machine shop supporting stable isotope work",
+    "localPath": "public/assets/img/lab-machine-shop.jpg",
+    "publicSrc": "/assets/img/lab-machine-shop.jpg",
+    "width": 668,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "lab-stable"
+    ],
+    "role": "lab-stable",
+    "downloaded": true,
+    "bytes": 158503
+  },
+  {
+    "id": "raman-invia",
+    "sourcePage": "https://www.davidzakharov.com/raman-microscopy",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/a745c852-8908-43ce-a2db-80747d415605/2023-08-24+16_38_41-.jpg?format=2500w",
+    "alt": "Renishaw InVia Raman microscope (532 nm)",
+    "localPath": "public/assets/img/raman-invia.jpg",
+    "publicSrc": "/assets/img/raman-invia.jpg",
+    "width": 1274,
+    "height": 958,
+    "usedIn": [
+      "gallery",
+      "lab-raman"
+    ],
+    "role": "lab-raman",
+    "downloaded": true,
+    "bytes": 142787
+  },
+  {
+    "id": "raman-invia-side",
+    "sourcePage": "https://www.davidzakharov.com/raman-microscopy",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/0ab3e50e-9ecb-41db-a246-459fd2c76ecd/2023-08-24+16_36_37-Photo+-+Google+Photos.jpg?format=2500w",
+    "alt": "Renishaw InVia Raman microscope — side view",
+    "localPath": "public/assets/img/raman-invia-side.jpg",
+    "publicSrc": "/assets/img/raman-invia-side.jpg",
+    "width": 1248,
+    "height": 941,
+    "usedIn": [
+      "gallery",
+      "lab-raman"
+    ],
+    "role": "lab-raman",
+    "downloaded": true,
+    "bytes": 164004
+  },
+  {
+    "id": "raman-lab-bench",
+    "sourcePage": "https://www.davidzakharov.com/raman-microscopy",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/99c80274-3c0a-4bfb-92fe-db5a5c9cc6ea/IMG_1053.jpg?format=2500w",
+    "alt": "Raman lab workspace in Haenicke Hall",
+    "localPath": "public/assets/img/raman-lab-bench.jpg",
+    "publicSrc": "/assets/img/raman-lab-bench.jpg",
+    "width": 1187,
+    "height": 890,
+    "usedIn": [
+      "gallery",
+      "lab-raman"
+    ],
+    "role": "lab-raman",
+    "downloaded": true,
+    "bytes": 166793
+  },
+  {
+    "id": "lake-michigan",
+    "sourcePage": "https://www.davidzakharov.com/contact",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/3a83f4b7-4988-419c-955f-4a6d5ab25215/lake+michigan.jpg?format=2500w",
+    "alt": "Lake Michigan shoreline near Kalamazoo / Western Michigan",
+    "localPath": "public/assets/img/lake-michigan.jpg",
+    "publicSrc": "/assets/img/lake-michigan.jpg",
+    "width": 2355,
+    "height": 1324,
+    "usedIn": [
+      "gallery"
+    ],
+    "role": "gallery",
+    "downloaded": true,
+    "bytes": 578660
+  },
+  {
+    "id": "contact-field-outcrop",
+    "sourcePage": "https://www.davidzakharov.com/contact",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/62c33471d31a09610be33405/2da9cd3d-9b4d-4840-95f2-79fab9edc136/IMG_0777.jpg?format=2500w",
+    "alt": "Field outcrop photo from the Join Us / Contact page",
+    "localPath": "public/assets/img/contact-field-outcrop.jpg",
+    "publicSrc": "/assets/img/contact-field-outcrop.jpg",
+    "width": 1187,
+    "height": 890,
+    "usedIn": [
+      "gallery"
+    ],
+    "role": "gallery",
+    "downloaded": true,
+    "bytes": 368416
+  }
+]

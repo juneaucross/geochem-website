@@ -1,0 +1,312 @@
+[
+  {
+    "name": "desktop-tab-nav",
+    "trail": [
+      {
+        "tag": "a",
+        "id": "brand-link",
+        "className": "",
+        "role": null,
+        "text": "Near-surface Alteration & Geochemistry Group",
+        "href": "#home"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "ABOUT",
+        "href": "#about"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "RESEARCH",
+        "href": "#research"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "TEAM",
+        "href": "#team"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "LABS",
+        "href": "#labs"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "GALLERY",
+        "href": "#gallery"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "SERVICE",
+        "href": "#services"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "PUBLICATIONS",
+        "href": "#publications"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "JOIN",
+        "href": "#join"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "btn btn--accent",
+        "role": null,
+        "text": "Research",
+        "href": "#research"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "btn",
+        "role": null,
+        "text": "Join",
+        "href": "#join"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "NSF OCE #2617725",
+        "href": "https://www.nsf.gov/awardsearch/show-award?AWD_ID=2617725"
+      }
+    ]
+  },
+  {
+    "name": "first-tab-target",
+    "focus": {
+      "tag": "a",
+      "id": null,
+      "className": "",
+      "role": null,
+      "text": "10.1130/G38759.1",
+      "href": "https://doi.org/10.1130/G38759.1"
+    }
+  },
+  {
+    "name": "doi-focus",
+    "focus": {
+      "tag": "a",
+      "id": null,
+      "className": "pub-doi",
+      "role": null,
+      "text": "10.1016/j.jvolgeores.2026.108622",
+      "href": "https://doi.org/10.1016/j.jvolgeores.2026.108622"
+    },
+    "href": "https://doi.org/10.1016/j.jvolgeores.2026.108622"
+  },
+  {
+    "name": "doi-enter-url",
+    "url": "http://localhost:4173/"
+  },
+  {
+    "name": "show-more-focus",
+    "focus": {
+      "tag": "button",
+      "id": null,
+      "className": "btn disclosure-toggle",
+      "role": null,
+      "text": "Show more (35 earlier updates)",
+      "href": null
+    }
+  },
+  {
+    "name": "after-show-more",
+    "buttonText": "Show less",
+    "updatesCount": 36
+  },
+  {
+    "name": "gallery-thumb-focus",
+    "focus": {
+      "tag": "button",
+      "id": null,
+      "className": "gallery-item",
+      "role": null,
+      "text": "Isabelle Boyer preparing samples for H-isotopes by EA Isolink OH",
+      "href": null
+    }
+  },
+  {
+    "name": "lightbox-open",
+    "open": true,
+    "focus": {
+      "tag": "button",
+      "id": "lightbox-close",
+      "className": "lightbox__close",
+      "role": null,
+      "text": "Close",
+      "href": null
+    }
+  },
+  {
+    "name": "lightbox-escape",
+    "closed": true,
+    "focus": {
+      "tag": "button",
+      "id": null,
+      "className": "gallery-item",
+      "role": null,
+      "text": "Isabelle Boyer preparing samples for H-isotopes by EA Isolink OH",
+      "href": null
+    }
+  },
+  {
+    "name": "menu-button-focus",
+    "focus": {
+      "tag": "button",
+      "id": "nav-open",
+      "className": "nav-toggle",
+      "role": null,
+      "text": "MENU",
+      "href": null
+    }
+  },
+  {
+    "name": "menu-open",
+    "open": true,
+    "focus": {
+      "tag": "button",
+      "id": "nav-close",
+      "className": "nav-dialog__close",
+      "role": null,
+      "text": "Close",
+      "href": null
+    }
+  },
+  {
+    "name": "mobile-menu-tab",
+    "trail": [
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "ABOUT",
+        "href": "#about"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "RESEARCH",
+        "href": "#research"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "TEAM",
+        "href": "#team"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "LABS",
+        "href": "#labs"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "GALLERY",
+        "href": "#gallery"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "SERVICE",
+        "href": "#services"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "PUBLICATIONS",
+        "href": "#publications"
+      },
+      {
+        "tag": "a",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "JOIN",
+        "href": "#join"
+      },
+      {
+        "tag": "body",
+        "id": null,
+        "className": "",
+        "role": null,
+        "text": "Skip to content\n\nNear-surface Alteration & Geochemistry Group\n\nMENU\nMENU\nClose\nA",
+        "href": null
+      },
+      {
+        "tag": "button",
+        "id": "nav-close",
+        "className": "nav-dialog__close",
+        "role": null,
+        "text": "Close",
+        "href": null
+      }
+    ]
+  },
+  {
+    "name": "menu-escape",
+    "open": false
+  },
+  {
+    "name": "images",
+    "imgReport": {
+      "total": 16,
+      "broken": [],
+      "placeholders": 15,
+      "lightboxEmpty": {
+        "id": "lightbox-image",
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "placeholder": false
+      }
+    }
+  },
+  {
+    "name": "console",
+    "messages": []
+  }
+]

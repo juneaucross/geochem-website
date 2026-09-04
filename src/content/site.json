@@ -1,0 +1,91 @@
+{
+  "brand": "Near-surface Alteration & Geochemistry Group",
+  "url": "https://www.davidzakharov.com/",
+  "pi": {
+    "name": "David Zakharov",
+    "email": "david.zakharov@wmich.edu",
+    "title": "Assistant Professor",
+    "profileUrl": "https://wmich.edu/geology/directory/zakharov",
+    "orcid": null
+  },
+  "affiliation": {
+    "department": "Department of Geological and Environmental Sciences",
+    "institution": "Western Michigan University",
+    "address": "1903 W Michigan Ave, Kalamazoo MI 49008-5241",
+    "phone": "(269) 387-5486",
+    "url": "https://wmich.edu/geology/"
+  },
+  "hero": {
+    "brand": "Near-surface Alteration & Geochemistry Group",
+    "headline": "Fluid–rock reaction from Archean crust to modern seafloor",
+    "support": "Geochemistry linking the hydrosphere and lithosphere at Western Michigan University.",
+    "image": {
+      "src": "/assets/img/hero-thin-section.jpg",
+      "alt": "Petrographic thin-section in plane-polarized light (TS_WT5-6); altered basalt fabric",
+      "width": 2080,
+      "height": 1544
+    }
+  },
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Research", "href": "#research" },
+    { "label": "Team", "href": "#team" },
+    { "label": "Lab", "href": "#labs" },
+    { "label": "Gallery", "href": "#gallery" },
+    { "label": "Service", "href": "#services" },
+    { "label": "Publications", "href": "#publications" },
+    { "label": "Join", "href": "#join" }
+  ],
+  "sections": [
+    {
+      "id": "about",
+      "eyebrow": "About",
+      "title": "Geochemistry at WMU",
+      "lede": "Fluid–rock reaction linking the hydrosphere and lithosphere — from Archean crust to modern seafloor."
+    },
+    {
+      "id": "research",
+      "eyebrow": "Research",
+      "title": "Current research themes",
+      "lede": "Three threads tracking fluids through deep time and modern vents with triple oxygen isotopes."
+    },
+    {
+      "id": "team",
+      "eyebrow": "Team",
+      "title": "People",
+      "lede": "Principal investigator, current researchers, and alumni of the group."
+    },
+    {
+      "id": "labs",
+      "eyebrow": "Lab",
+      "title": "Instruments and facilities",
+      "lede": "Stable isotope mass spectrometry and Raman microscopy in Haenicke Hall."
+    },
+    {
+      "id": "gallery",
+      "eyebrow": "Gallery",
+      "title": "Lab and field",
+      "lede": "People, instruments, and samples from the group — open any image for a closer look."
+    },
+    {
+      "id": "services",
+      "eyebrow": "Service",
+      "title": "Service work",
+      "lede": "Collaborative measurements with clear rates and deliverables."
+    },
+    {
+      "id": "publications",
+      "eyebrow": "Publications",
+      "title": "Selected publications",
+      "lede": ""
+    },
+    {
+      "id": "join",
+      "eyebrow": "Join",
+      "title": "Join us",
+      "lede": "Undergraduate and graduate openings — email David, explore project seeds, and life in Kalamazoo."
+    }
+  ],
+  "established": "Laboratory established ca. January 2023 by David Zakharov (PI)",
+  "sourceNote": "Content migrated from https://www.davidzakharov.com/ (Squarespace) for redesign scaffold."
+}

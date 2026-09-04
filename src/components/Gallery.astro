@@ -1,0 +1,68 @@
+---
+import { withBase } from '../lib/paths';
+
+interface SectionCopy {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+}
+
+interface GalleryItem {
+  id: string;
+  src: string;
+  caption: string;
+  width: number;
+  height: number;
+}
+
+interface Props {
+  meta: SectionCopy;
+  note: string;
+  items: GalleryItem[];
+}
+
+const { meta, note, items } = Astro.props;
+---
+
+<section id="gallery" class="section section--band reveal is-revealed" aria-labelledby="gallery-title">
+  <p class="eyebrow">{meta.eyebrow}</p>
+  <h2 id="gallery-title">{meta.title}</h2>
+  <p id="gallery-lede" class="lede">{meta.lede}</p>
+  <div id="gallery-body" class="gallery-grid">
+    {
+      items.length ? (
+        items.map((item) => {
+          const alt = item.caption || 'Lab or research photograph';
+          const src = withBase(item.src);
+          return (
+            <button
+              type="button"
+              class="gallery-item"
+              aria-haspopup="dialog"
+              aria-controls="lightbox-dialog"
+              data-lightbox-src={src}
+              data-lightbox-alt={alt}
+              data-lightbox-caption={item.caption || ''}
+            >
+              <img
+                class="gallery-item__media"
+                src={src}
+                alt={alt}
+                width={item.width || 800}
+                height={item.height || 533}
+                loading="lazy"
+                decoding="async"
+              />
+              {item.caption ? (
+                <span class="gallery-item__caption">{item.caption}</span>
+              ) : null}
+            </button>
+          );
+        })
+      ) : (
+        <p class="status">{note || 'Gallery captions will appear here once media is placed.'}</p>
+      )
+    }
+  </div>
+</section>

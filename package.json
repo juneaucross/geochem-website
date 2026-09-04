@@ -1,0 +1,21 @@
+{
+  "name": "davey",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Near-surface Alteration & Geochemistry Group site (Astro + Vue)",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^7.0.2",
+    "astro": "^7.2.0",
+    "vue": "^3.5.41"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

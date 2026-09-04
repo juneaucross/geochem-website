@@ -1,0 +1,161 @@
+{
+  "id": "gallery",
+  "title": "Gallery",
+  "note": "Photographs sourced from davidzakharov.com (Squarespace CDN) and stored locally under public/assets/img/. See docs/image-manifest.json.",
+  "items": [
+    {
+      "id": "isabelle-h-isotopes",
+      "caption": "Isabelle Boyer preparing samples for H-isotopes by EA Isolink OH",
+      "src": "/assets/img/isabelle-h-isotopes.jpg",
+      "width": 1187,
+      "height": 890
+    },
+    {
+      "id": "afrid-fluorination",
+      "caption": "Stable isotope lab at WMU 2024. PhD student Afrid Sheik is fluorinating silicates",
+      "src": "/assets/img/afrid-fluorination.jpg",
+      "width": 1145,
+      "height": 700
+    },
+    {
+      "id": "kwings-2024",
+      "caption": "K Wings Game, Jan 2024",
+      "src": "/assets/img/team-kwings-2024.jpg",
+      "width": 1162,
+      "height": 654
+    },
+    {
+      "id": "kola-zircons",
+      "caption": "Low-δ¹⁸O zircons from the Kola Craton. SIMS analytical points with δ¹⁸O, ¹⁶OH/¹⁶O ratios, and ²⁰⁷–²⁰⁶Pb ages.",
+      "src": "/assets/img/research-kola-zircons.jpg",
+      "width": 2500,
+      "height": 3474
+    },
+    {
+      "id": "axial-jason",
+      "caption": "ROV Jason sampled hydrothermal vent fluids at the vents of the Axial Seamount. Credit: W. Chadwick, OSU, NSF, WHOI. 2020.",
+      "src": "/assets/img/research-axial-jason.jpg",
+      "width": 2500,
+      "height": 1404
+    },
+    {
+      "id": "chert-thin-section",
+      "caption": "Thin section of a chert drilled from modern seafloor; SIMS and electron microprobe maps of recrystallized foraminifera shell.",
+      "src": "/assets/img/research-chert-thin-section.jpg",
+      "width": 2500,
+      "height": 2440
+    },
+    {
+      "id": "vetreny-pillows",
+      "caption": "Well-preserved pillow basalts from the 2.43–2.41 Ga Vetreny Belt (Karelia Craton, Russia).",
+      "src": "/assets/img/research-vetreny-pillows.jpg",
+      "width": 2500,
+      "height": 1957
+    },
+    {
+      "id": "lab-overview-2024",
+      "caption": "Lab overview photo (Jan 2024)",
+      "src": "/assets/img/lab-overview-2024.jpg",
+      "width": 1271,
+      "height": 953
+    },
+    {
+      "id": "lab-delta-v-analyzer",
+      "caption": "Analyzer of our Delta V Plus; CONFLO IV above the MS",
+      "src": "/assets/img/lab-delta-v-analyzer.jpg",
+      "width": 668,
+      "height": 890
+    },
+    {
+      "id": "lab-brf5-transfer",
+      "caption": "Transfer and distillation of fluorinating agent inside a fume hood",
+      "src": "/assets/img/lab-brf5-transfer.jpg",
+      "width": 1187,
+      "height": 890
+    },
+    {
+      "id": "lab-fluorination-line",
+      "caption": "Fluorination line at work with vent snorkel",
+      "src": "/assets/img/lab-fluorination-line.jpg",
+      "width": 1187,
+      "height": 890
+    },
+    {
+      "id": "lab-haenicke-hall",
+      "caption": "Beautiful Haenicke Hall, where we are hosted",
+      "src": "/assets/img/lab-haenicke-hall.jpg",
+      "width": 668,
+      "height": 890
+    },
+    {
+      "id": "lab-chlorine-byproduct",
+      "caption": "Chlorine in solid form — fluorination byproduct",
+      "src": "/assets/img/lab-chlorine-byproduct.jpg",
+      "width": 668,
+      "height": 890
+    },
+    {
+      "id": "lab-sample-chamber",
+      "caption": "Sample chamber with Ni-sample holder under vacuum behind BaF₂ window",
+      "src": "/assets/img/lab-sample-chamber.jpg",
+      "width": 668,
+      "height": 890
+    },
+    {
+      "id": "lab-machine-shop",
+      "caption": "Machine shop supporting stable isotope work",
+      "src": "/assets/img/lab-machine-shop.jpg",
+      "width": 668,
+      "height": 890
+    },
+    {
+      "id": "lab-fluorination-quartz-process",
+      "caption": "Laser fluorination of quartz grains in Ni holder (process sequence)",
+      "src": "/assets/img/lab-fluorination-quartz-process.jpg",
+      "width": 2500,
+      "height": 1424
+    },
+    {
+      "id": "lab-fluorination-uwg2-garnet",
+      "caption": "Fluorination progress for UWG-2 garnet",
+      "src": "/assets/img/lab-fluorination-uwg2-garnet.jpg",
+      "width": 2500,
+      "height": 1304
+    },
+    {
+      "id": "raman-invia",
+      "caption": "Renishaw InVia Raman microscope (532 nm)",
+      "src": "/assets/img/raman-invia.jpg",
+      "width": 1274,
+      "height": 958
+    },
+    {
+      "id": "raman-invia-side",
+      "caption": "Renishaw InVia Raman microscope — side view",
+      "src": "/assets/img/raman-invia-side.jpg",
+      "width": 1248,
+      "height": 941
+    },
+    {
+      "id": "raman-lab-bench",
+      "caption": "Raman lab workspace in Haenicke Hall",
+      "src": "/assets/img/raman-lab-bench.jpg",
+      "width": 1187,
+      "height": 890
+    },
+    {
+      "id": "lake-michigan",
+      "caption": "Lake Michigan shoreline near Western Michigan",
+      "src": "/assets/img/lake-michigan.jpg",
+      "width": 2355,
+      "height": 1324
+    },
+    {
+      "id": "contact-field-outcrop",
+      "caption": "Field outcrop (Join Us / Contact page)",
+      "src": "/assets/img/contact-field-outcrop.jpg",
+      "width": 1187,
+      "height": 890
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+---
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/layout.css';
+import { withBase } from '../lib/paths';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** LCP hero image URL for `<link rel="preload">` (omit if no hero). */
+  heroImageSrc?: string;
+}
+
+const {
+  title = 'Near-surface Alteration & Geochemistry Group',
+  description = 'Near-surface Alteration & Geochemistry Group at Western Michigan University — fluid–rock reaction, triple oxygen isotopes, and lab services.',
+  heroImageSrc,
+} = Astro.props;
+
+const faviconSvg = withBase('/favicon.svg');
+const faviconIco = withBase('/favicon.ico');
+const heroPreloadHref = heroImageSrc ? withBase(heroImageSrc) : undefined;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={faviconSvg} />
+    <link rel="icon" href={faviconIco} />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.bunny.net/css?family=ibm-plex-mono:400,500|ibm-plex-sans:400,500,600|sora:400,600,700|source-serif-4:400,600&display=swap"
+    />
+    {
+      heroPreloadHref ? (
+        <link rel="preload" href={heroPreloadHref} as="image" fetchpriority="high" />
+      ) : null
+    }
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <slot />
+  </body>
+</html>

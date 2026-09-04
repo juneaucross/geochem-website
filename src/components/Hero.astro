@@ -1,0 +1,39 @@
+---
+import { withBase } from '../lib/paths';
+
+interface Props {
+  brand: string;
+  headline: string;
+  support: string;
+  image: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
+}
+
+const { brand, headline, support, image } = Astro.props;
+const imageSrc = withBase(image.src);
+---
+
+<section id="home" class="hero" aria-labelledby="hero-brand">
+  <div class="hero__media">
+    <img
+      id="hero-image"
+      class="hero__image"
+      src={imageSrc}
+      alt={image.alt}
+      width={image.width}
+      height={image.height}
+      fetchpriority="high"
+      decoding="async"
+    />
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <div class="hero__content">
+    <h1 id="hero-brand" class="hero__brand">{brand}</h1>
+    <p id="hero-headline" class="hero__headline">{headline}</p>
+    <p id="hero-support" class="hero__support">{support}</p>
+  </div>
+</section>

@@ -1,0 +1,80 @@
+---
+import { render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import MediaFigure from './MediaFigure.astro';
+
+interface SectionCopy {
+  id: string;
+  eyebrow: string;
+  title: string;
+  lede: string;
+}
+
+interface Props {
+  meta: SectionCopy;
+  stable: CollectionEntry<'labs-stable-isotope'>;
+  raman: CollectionEntry<'labs-raman'>;
+}
+
+const { meta, stable, raman } = Astro.props;
+const { Content: StableContent } = await render(stable);
+const { Content: RamanContent } = await render(raman);
+
+const stableTitle = stable.data.title || 'Stable Isotope Lab';
+const ramanTitle = raman.data.title || 'Raman Microscope';
+---
+
+<section id="labs" class="section reveal is-revealed" aria-labelledby="labs-title">
+  <p class="eyebrow">{meta.eyebrow}</p>
+  <h2 id="labs-title">{meta.title}</h2>
+  <p id="labs-lede" class="lede">{meta.lede}</p>
+  <div id="labs-body" class="labs-grid">
+    <article class="lab" id="labs-stable-isotope">
+      <h3>{stableTitle}</h3>
+      <div class="prose prose--lab">
+        <StableContent />
+      </div>
+      <MediaFigure
+        src="/assets/img/lab-overview-2024.jpg"
+        alt="Lab overview photo (Jan 2024)"
+        caption="Lab overview photo (Jan 2024)"
+        width={1271}
+        height={953}
+        zoomable
+      />
+    </article>
+
+    <article class="lab" id="labs-raman">
+      <h3>{ramanTitle}</h3>
+      <div class="prose prose--lab">
+        <RamanContent />
+      </div>
+      <MediaFigure
+        src="/assets/img/raman-invia.jpg"
+        alt="Renishaw InVia Raman microscope (532 nm)"
+        caption="Renishaw InVia Raman microscope (532 nm)"
+        width={1274}
+        height={958}
+        zoomable
+      />
+    </article>
+  </div>
+</section>
+
+<style is:global>
+  /* Collection MD starts with ## title — section already has h3 */
+  .prose--lab > h2:first-child {
+    display: none;
+  }
+
+  /* Astro renders ### as h3; vanilla demoted to h4 — same visual role */
+  .lab .prose h3 {
+    margin-block-start: var(--space-4);
+    font-family: var(--font-ui);
+    font-size: var(--text-small);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+  }
+</style>
