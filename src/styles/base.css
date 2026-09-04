@@ -390,19 +390,12 @@ a:active {
   color: var(--color-ink-muted);
 }
 
-/* Labs */
+/* Labs — single-column stack (see Labs.astro .labs-stack) */
 .labs-grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-5);
   margin-block-start: var(--space-4);
-}
-
-@media (min-width: 56rem) {
-  .labs-grid {
-    grid-template-columns: 1.2fr 1fr;
-    gap: var(--space-5) var(--space-4);
-    align-items: start;
-  }
 }
 
 .lab h3 {
