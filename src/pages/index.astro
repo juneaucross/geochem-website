@@ -79,11 +79,7 @@ const pageDescription = site.hero.support;
       updates={updatesEntry.data}
     />
 
-    <Team
-      meta={sectionMeta(sections, 'team')}
-      groupPhoto={teamEntry.data.groupPhoto}
-      members={teamEntry.data.members}
-    />
+    <Team meta={sectionMeta(sections, 'team')} members={teamEntry.data.members} />
 
     <Labs meta={sectionMeta(sections, 'labs')} stable={labsStable} raman={labsRaman} />
 

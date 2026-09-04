@@ -120,7 +120,7 @@ const team = defineCollection({
   schema: z.object({
     id: z.string().min(1),
     title: z.string().min(1),
-    groupPhoto: imageAssetWithCaption,
+    groupPhoto: imageAssetWithCaption.optional(),
     members: z
       .array(
         z.object({

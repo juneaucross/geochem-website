@@ -1,5 +1,4 @@
 ---
-import MediaFigure from './MediaFigure.astro';
 import { withBase } from '../lib/paths';
 
 interface SectionCopy {
@@ -35,20 +34,12 @@ interface Member {
   photo?: MemberPhoto;
 }
 
-interface GroupPhoto {
-  src: string;
-  caption: string;
-  width: number;
-  height: number;
-}
-
 interface Props {
   meta: SectionCopy;
-  groupPhoto?: GroupPhoto;
   members: Member[];
 }
 
-const { meta, groupPhoto, members } = Astro.props;
+const { meta, members } = Astro.props;
 
 const pi = members.find((m) => /principal investigator/i.test(m.role || ''));
 const current = members.filter((m) => m.status === 'current' && m !== pi);
@@ -63,22 +54,8 @@ function photoAlt(person: Member): string {
 <section id="team" class="section section--band reveal is-revealed" aria-labelledby="team-title">
   <p class="eyebrow">{meta.eyebrow}</p>
   <h2 id="team-title">{meta.title}</h2>
-  <p id="team-lede" class="lede">{meta.lede}</p>
+  {meta.lede.trim() ? <p id="team-lede" class="lede">{meta.lede}</p> : null}
   <div id="team-body">
-    {
-      groupPhoto ? (
-        <MediaFigure
-          class="media-figure team-photo"
-          src={groupPhoto.src}
-          alt={groupPhoto.caption}
-          caption={groupPhoto.caption}
-          width={groupPhoto.width}
-          height={groupPhoto.height}
-          zoomable
-        />
-      ) : null
-    }
-
     {
       pi ? (
         <div class="team-group">

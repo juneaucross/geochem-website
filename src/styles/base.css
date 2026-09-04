@@ -473,11 +473,6 @@ a:active {
 }
 
 /* Team */
-.team-photo {
-  max-inline-size: 36rem;
-  margin-block-end: var(--space-5);
-}
-
 .team-group + .team-group {
   margin-block-start: var(--space-5);
 }

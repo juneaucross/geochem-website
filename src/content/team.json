@@ -1,12 +1,6 @@
 {
   "id": "team",
   "title": "Team",
-  "groupPhoto": {
-    "caption": "K Wings Game, Jan 2024",
-    "src": "/assets/img/team-kwings-2024.jpg",
-    "width": 1162,
-    "height": 654
-  },
   "members": [
     {
       "name": "David Zakharov",
