@@ -5,8 +5,8 @@ import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://juneaucross.github.io',
-  base: '/davey/',
+  site: 'https://david-zakharov.github.io',
+  base: '/geochem-website/',
   output: 'static',
   integrations: [vue()],
 });
