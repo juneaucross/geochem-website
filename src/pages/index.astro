@@ -5,7 +5,6 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
-import Research from '../components/Research.astro';
 import Team from '../components/Team.astro';
 import Labs from '../components/Labs.astro';
 import Gallery from '../components/Gallery.astro';
@@ -23,9 +22,6 @@ if (!aboutEntry) throw new Error('Missing content collection entry: about/about'
 
 const joinEntry = await getEntry('join', 'join');
 if (!joinEntry) throw new Error('Missing content collection entry: join/join');
-
-const researchEntry = await getEntry('research', 'research');
-if (!researchEntry) throw new Error('Missing content collection entry: research/research');
 
 const teamEntry = await getEntry('team', 'team');
 if (!teamEntry) throw new Error('Missing content collection entry: team/team');
@@ -82,8 +78,6 @@ const pageDescription = site.hero.support;
       established={site.established}
       updates={updatesEntry.data}
     />
-
-    <Research meta={sectionMeta(sections, 'research')} themes={researchEntry.data.themes} />
 
     <Team
       meta={sectionMeta(sections, 'team')}

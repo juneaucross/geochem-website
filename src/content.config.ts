@@ -110,23 +110,6 @@ const labsRaman = defineCollection({
   }),
 });
 
-const research = defineCollection({
-  loader: glob({ pattern: 'research.json', base: './src/content' }),
-  schema: z.object({
-    id: z.string().min(1),
-    title: z.string().min(1),
-    themes: z
-      .array(
-        z.object({
-          id: z.string().min(1),
-          title: z.string().min(1),
-          dois: z.array(doiUrl).min(1),
-        }),
-      )
-      .min(1),
-  }),
-});
-
 const teamLink = z.object({
   label: z.string().min(1),
   href: httpUrl,
@@ -257,7 +240,6 @@ export const collections = {
   join,
   'labs-stable-isotope': labsStableIsotope,
   'labs-raman': labsRaman,
-  research,
   team,
   publications,
   services,

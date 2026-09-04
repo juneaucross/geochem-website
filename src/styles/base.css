@@ -351,45 +351,6 @@ a:active {
   max-inline-size: 40rem;
 }
 
-/* Research themes — grid, no card chrome */
-.research-grid {
-  display: grid;
-  gap: var(--space-5) var(--space-4);
-  grid-template-columns: 1fr;
-  margin-block-start: var(--space-4);
-}
-
-@media (min-width: 48rem) {
-  .research-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-.theme {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  padding-block-start: var(--space-3);
-  border-block-start: 1px solid var(--color-line);
-}
-
-.theme h3 {
-  font-size: var(--text-h3);
-  max-inline-size: 28ch;
-}
-
-.theme__dois {
-  font-family: var(--font-ui);
-  font-size: var(--text-small);
-}
-
-.theme__dois-label {
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--color-ink-muted);
-}
-
 /* Labs — single-column stack (see Labs.astro .labs-stack) */
 .labs-grid {
   display: flex;
